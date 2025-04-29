@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Amazon - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #004F44;
+            font-family: 'Nunito', sans-serif;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 40px;
+            gap: 40px;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .dashboard-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 0 0 0;
+        }
+        .dashboard-title {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        .charts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            width: 100%;
+        }
+        .chart-box {
+            background: #035e51;
+            border-radius: 16px;
+            padding: 32px 24px 24px 24px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            min-width: 340px;
+            max-width: 420px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chart-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .back-btn {
+            margin: 32px 0 0 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 2px solid #EFF7F5;
+            background: transparent;
+            color: #EFF7F5;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+        .back-btn:hover {
+            background: rgba(239, 247, 245, 0.1);
+        }
+        @media (max-width: 900px) {
+            .charts { flex-direction: column; align-items: center; }
+            .chart-box { min-width: 260px; max-width: 98vw; }
+        }
+        .key-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        .metric-box {
+            background: #035e51;
+            border-radius: 16px;
+            padding: 32px 24px 24px 24px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            min-width: 340px;
+            max-width: 420px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .metric-number {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+        .metric-label {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 40px;">    
+            <a href="/gioi_thieu.html">Giới thiệu website</a>
+            <a href="/amazon_dashboard.html">Giới thiệu Amazon</a>
+        </div>
+        <div style="display: flex; gap: 40px;">
+            <a href="/index.html">Trang chủ</a>
+            <a href="/contact.html">Thông tin liên hệ</a>
+        </div>
+    </nav>
+    <div class="dashboard-container">
+        <div class="dashboard-title">Tổng quan Amazon Marketplace</div>
+        <div class="key-metrics">
+            <div class="metric-box">
+                <div class="metric-number" id="totalProducts">0</div>
+                <div class="metric-label">Sản phẩm Automotive trên Amazon</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-number" id="totalBrands">0</div>
+                <div class="metric-label">Nhãn hiệu Automotive</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-number" id="topCountry">Mỹ</div>
+                <div class="metric-label">Quốc gia dẫn đầu</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-number" id="estimatedRevenue">$12B+</div>
+                <div class="metric-label">Doanh thu Automotive (ước tính)</div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart-box">
+                <div class="chart-title">Phân bố sản phẩm theo quốc gia</div>
+                <canvas id="countryChart" width="350" height="300"></canvas>
+            </div>
+            <div class="chart-box">
+                <div class="chart-title">Phân bố sản phẩm theo danh mục</div>
+                <canvas id="categoryChart" width="350" height="300"></canvas>
+            </div>
+            <div class="chart-box">
+                <div class="chart-title">Phân bố giá sản phẩm</div>
+                <canvas id="priceChart" width="350" height="300"></canvas>
+            </div>
+        </div>
+        <button class="back-btn" onclick="window.location.href='/'">← Quay lại</button>
+    </div>
+    <div style="opacity: 0.25; color: white; font-size: 12px; font-family: Nunito; font-style: italic; font-weight: 500; letter-spacing: 0.30px; word-wrap: break-word; text-align: center; margin-bottom: 24px;">2025 - plEcomver1.0.0 -  Le Nguyen Truong Phuoc - All right reserved</div>
+    <script>
+        // Hiệu ứng đếm số cho các số liệu ấn tượng
+        function animateValue(id, start, end, duration) {
+            let range = end - start;
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            const obj = document.getElementById(id);
+            let timer = setInterval(function() {
+                current += increment;
+                obj.textContent = current.toLocaleString();
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+        // Số liệu tham khảo, có thể cập nhật động từ API nếu muốn
+        animateValue('totalProducts', 0, 1200000, 1500);
+        animateValue('totalBrands', 0, 20000, 1200);
+        // Hàm fetch dữ liệu và vẽ biểu đồ
+        async function fetchAndDraw() {
+            // Lấy dữ liệu từ API backend (cần tạo các API này)
+            const [countryRes, categoryRes, priceRes] = await Promise.all([
+                fetch('/api/stats/country'),
+                fetch('/api/stats/category'),
+                fetch('/api/stats/price-group')
+            ]);
+            const countryData = await countryRes.json();
+            const categoryData = await categoryRes.json();
+            const priceData = await priceRes.json();
+
+            // Biểu đồ quốc gia
+            new Chart(document.getElementById('countryChart'), {
+                type: 'pie',
+                data: {
+                    labels: countryData.map(e => e.CountryOfOrigin),
+                    datasets: [{
+                        data: countryData.map(e => e.count),
+                        backgroundColor: [
+                            '#4DD0E1', '#FFB74D', '#81C784', '#BA68C8', '#FFD54F', '#E57373', '#64B5F6', '#A1887F', '#90A4AE', '#F06292'
+                        ],
+                    }]
+                },
+                options: {
+                    animation: { animateScale: true, duration: 1200 },
+                    plugins: { legend: { position: 'bottom' } }
+                }
+            });
+
+            // Biểu đồ danh mục
+            new Chart(document.getElementById('categoryChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: categoryData.map(e => e.Category),
+                    datasets: [{
+                        data: categoryData.map(e => e.count),
+                        backgroundColor: [
+                            '#FFB74D', '#4DD0E1', '#BA68C8', '#81C784', '#FFD54F', '#E57373', '#64B5F6', '#A1887F', '#90A4AE', '#F06292'
+                        ],
+                    }]
+                },
+                options: {
+                    animation: { animateRotate: true, duration: 1200 },
+                    plugins: { legend: { position: 'bottom' } }
+                }
+            });
+
+            // Biểu đồ giá
+            new Chart(document.getElementById('priceChart'), {
+                type: 'bar',
+                data: {
+                    labels: priceData.map(e => e.PriceGroup),
+                    datasets: [{
+                        label: 'Số lượng sản phẩm',
+                        data: priceData.map(e => e.count),
+                        backgroundColor: '#4DD0E1',
+                    }]
+                },
+                options: {
+                    animation: { duration: 1200 },
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { grid: { color: '#035e51' }, ticks: { color: '#fff' } },
+                        y: { grid: { color: '#035e51' }, ticks: { color: '#fff' } }
+                    }
+                }
+            });
+        }
+        fetchAndDraw();
+    </script>
+</body>
+</html> 

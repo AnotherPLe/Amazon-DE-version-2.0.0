@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu website - plEcom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #004F44;
+            font-family: 'Nunito', 'DM Sans', sans-serif;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .header-left, .header-right {
+            display: flex;
+            gap: 40px;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .intro-box {
+            width: 1026px;
+            min-height: 950px;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+        }
+        .intro-title {
+            color: #fff;
+            font-size: 40px;
+            font-family: Nunito, sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            letter-spacing: 0.30px;
+            margin-bottom: 16px;
+        }
+        .intro-section {
+            color: #fff;
+            font-size: 26px;
+            font-family: Nunito, sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            letter-spacing: 0.30px;
+            margin-bottom: 16px;
+        }
+        .intro-highlight {
+            color: #fff;
+            font-size: 40px;
+            font-family: Nunito, sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            letter-spacing: 0.30px;
+            margin-bottom: 8px;
+        }
+        .intro-list {
+            color: #fff;
+            font-size: 26px;
+            font-family: Nunito, sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 0.30px;
+            margin-bottom: 16px;
+        }
+        .divider {
+            width: 918px;
+            height: 0px;
+            outline: 5px white solid;
+            outline-offset: -2.5px;
+            margin: 32px 0;
+        }
+        .copyright {
+            opacity: 0.25;
+            color: white;
+            font-size: 20px;
+            font-family: Nunito, sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            letter-spacing: 0.30px;
+            word-wrap: break-word;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 1100px) {
+            .intro-box, .divider { width: 98vw; min-width: unset; }
+        }
+        @media (max-width: 700px) {
+            .intro-box { font-size: 18px; padding: 10px; }
+            .intro-title, .intro-highlight { font-size: 28px; }
+            .intro-section, .intro-list { font-size: 18px; }
+            .divider { width: 90vw; }
+        }
+        .key-metrics {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .metric-box {
+            background: #035e51;
+            border-radius: 16px;
+            padding: 24px 32px;
+            min-width: 180px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .metric-number {
+            font-size: 32px;
+            font-weight: 900;
+            color: #FFD54F;
+            margin-bottom: 8px;
+            transition: all 0.5s;
+        }
+        .metric-label {
+            font-size: 16px;
+            color: #fff;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 40px;">    
+            <a href="/gioi_thieu.html">Giới thiệu website</a>
+            <a href="/amazon_dashboard.html">Giới thiệu Amazon</a>
+        </div>
+        <div style="display: flex; gap: 40px;">
+            <a href="/index.html">Trang chủ</a>
+            <a href="/contact.html">Thông tin liên hệ</a>
+        </div>
+    </nav>
+    <div class="main-content" style="display: flex; justify-content: flex-end; align-items: center; min-height: 70vh;">
+        <div class="intro-box" style="box-sizing: border-box; align-items: flex-start; background: transparent;">
+            <div style="width: 100%; padding: 40px 40px 0 40px;">
+                <div class="intro-title">Giới thiệu chung</div>
+                <div class="intro-section" style="font-size: 20px;">
+                    Dịch vụ tra cứu thông tin TMĐT plEcom là dự án môn học tâm huyết, được thiết kế để hỗ trợ những người bước đầu sử dụng sàn TMĐT Amazon và đặc biệt có mong muốn tìm kiếm các sản phẩm liên quan đên Automotive - là các sản phẩm liên quan đến ô tô như phụ tùng, link kiện, đồ chơi trang trí,...
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div style="width: 100%; padding: 0 40px 40px 40px;">
+                <div class="intro-highlight">Một số ưu điểm nổi bật:</div>
+                <div class="intro-list" style="font-size: 20px;">
+                    Trang web cung cấp một nền tảng tra cứu sản phẩm phong phú, với nhiều loại mặt hàng khác nhau, từ phụ tùng ô tô đến các thiết bị điện tử và nhiều ngành hàng khác. Mỗi sản phẩm trên trang đều được kiểm duyệt kỹ lưỡng, đảm bảo cung cấp thông tin chi tiết và chính xác nhất về các tính năng, giá cả và đánh giá từ người dùng. Với  phong cách thiết kế đơn giản và dễ sử dụng, plEcom hy vọng sẽ người dùng nhanh chóng tìm kiếm và so sánh các sản phẩm phù hợp với nhu cầu.
+                </div>
+            </div>
+            <div class="key-metrics">
+                <div class="metric-box">
+                    <div class="metric-number" id="totalProducts">0</div>
+                    <div class="metric-label">Sản phẩm Automotive trên Amazon</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number" id="totalBrands">0</div>
+                    <div class="metric-label">Nhãn hiệu Automotive</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number" id="topCountry">Mỹ</div>
+                    <div class="metric-label">Quốc gia dẫn đầu</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number" id="estimatedRevenue">$12B+</div>
+                    <div class="metric-label">Doanh thu Automotive (ước tính)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 40px 0 0 0; gap: 16px;">
+        <button onclick="window.location.href='/search.html'" style="background: transparent; border: 2px solid #EFF7F5; color: #EFF7F5; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 16px; transition: all 0.2s;">← Quay lại tra cứu</button>
+        <button onclick="window.location.href='/'" style="background: transparent; border: 2px solid #EFF7F5; color: #EFF7F5; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 16px; transition: all 0.2s;">Trang chủ</button>
+    </div>
+    <div class="copyright">2025 - plEcomver1.0.0 -  Le Nguyen Truong Phuoc - All right reserved</div>
+    <script>
+        function animateValue(id, start, end, duration) {
+            let range = end - start;
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            const obj = document.getElementById(id);
+            let timer = setInterval(function() {
+                current += increment;
+                obj.textContent = current.toLocaleString();
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+        // Ví dụ: animateValue('totalProducts', 0, 1200000, 1500);
+    </script>
+</body>
+</html> 

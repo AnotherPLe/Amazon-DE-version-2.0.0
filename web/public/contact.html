@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin liên hệ - plEcom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #004F44;
+            font-family: 'Nunito', sans-serif;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 40px;
+            gap: 40px;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .contact-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+            gap: 32px;
+        }
+        .contact-info {
+            flex: 1;
+            max-width: 420px;
+            background: #035e51;
+            border-radius: 20px 0 0 20px;
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .contact-info h2 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 12px;
+
+        }
+        .contact-row {
+            font-size: 20px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+        .contact-label {
+            font-weight: 700;
+            color: #FFD54F;
+            margin-right: 8px;
+        }
+        .contact-img {
+            flex: 1;
+            max-width: 420px;
+            min-width: 220px;
+            /* background: #035e51; */
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+            box-shadow: none;
+            padding: 0;
+            height: 100%;
+        }
+        .contact-img img {
+            width: 76%;
+            height: 85%;
+            border-radius: 0;
+            box-shadow: none;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 900px) {
+            .contact-container { flex-direction: column; gap: 32px; }
+            .contact-info, .contact-img { border-radius: 20px; max-width: 98vw; }
+        }
+        .copyright {
+            opacity: 0.25;
+            color: white;
+            font-size: 12px;
+            font-family: Nunito, sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            letter-spacing: 0.30px;
+            word-wrap: break-word;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 40px;">    
+            <a href="/gioi_thieu.html">Giới thiệu website</a>
+            <a href="/amazon_dashboard.html">Giới thiệu Amazon</a>
+        </div>
+        <div style="display: flex; gap: 40px;">
+            <a href="/index.html">Trang chủ</a>
+            <a href="/contact.html">Thông tin liên hệ</a>
+        </div>
+    </nav>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Thông tin liên hệ</h2>
+            <div class="contact-row"><span class="contact-label">Họ tên:</span> Lê Nguyễn Trường Phước</div>
+            <div class="contact-row"><span class="contact-label">SĐT:</span> 0981.512.345</div>
+            <div class="contact-row"><span class="contact-label">Email:</span> phuocle11001203@gmail.com</div>
+            <div class="contact-row"><span class="contact-label">Trường:</span> Đại học Bách khoa Hà Nội</div>
+        </div>
+        <div class="contact-img">
+            <img src="img/ple.jpg" alt="Ảnh cá nhân" />
+        </div>
+    </div>
+    <div class="copyright">2025 - plEcomver1.0.0 -  Le Nguyen Truong Phuoc - All right reserved</div>
+</body>
+</html>
