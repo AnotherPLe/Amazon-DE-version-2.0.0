@@ -1,0 +1,339 @@
+[2025-04-08T04:03:09.975+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-08T04:03:10.400+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Exterior_Accessories_2 manual__2025-04-08T04:02:31.163432+00:00 [queued]>
+[2025-04-08T04:03:10.593+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Exterior_Accessories_2 manual__2025-04-08T04:02:31.163432+00:00 [queued]>
+[2025-04-08T04:03:10.599+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-08T04:03:17.265+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_Exterior_Accessories_2> on 2025-04-08 04:02:31.163432+00:00
+[2025-04-08T04:03:17.369+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5741) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-08T04:03:17.381+0000] {standard_task_runner.py:72} INFO - Started process 7095 to run task
+[2025-04-08T04:03:17.394+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_Exterior_Accessories_2', 'manual__2025-04-08T04:02:31.163432+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmpbycunztg']
+[2025-04-08T04:03:17.397+0000] {standard_task_runner.py:105} INFO - Job 165: Subtask process_Exterior_Accessories_2
+[2025-04-08T04:03:34.511+0000] {job.py:229} INFO - Heartbeat recovered after 25.95 seconds
+[2025-04-08T04:03:36.323+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_Exterior_Accessories_2 manual__2025-04-08T04:02:31.163432+00:00 [running]> on host 13b4251b7529
+[2025-04-08T04:03:36.954+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_Exterior_Accessories_2' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T04:02:31.163432+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T04:02:31.163432+00:00'
+[2025-04-08T04:03:36.969+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-08T04:03:36.978+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-08T04:03:37.017+0000] {logging_mixin.py:190} INFO - Current task name:process_Exterior_Accessories_2 state:running start_date:2025-04-08 04:03:10.437245+00:00
+[2025-04-08T04:03:37.018+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-08T04:03:37.024+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-08T04:03:37.026+0000] {test_crawl_list_product.py:228} INFO - Processing: Automotive/Exterior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857511&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_exterior_accessories__0_2_10_4
+[2025-04-08T04:03:37.284+0000] {test_crawl_list_product.py:46} INFO - Using user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+[2025-04-08T04:03:37.287+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T04:03:38.477+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T04:03:39.421+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T04:03:40.371+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T04:04:00.725+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:01.690+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 24 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:01.699+0000] {test_crawl_list_product.py:209} INFO - Page 1 for Automotive/Exterior Accessories : Crawled 24 items in 12.51 seconds
+[2025-04-08T04:04:01.883+0000] {test_crawl_list_product.py:218} INFO - Moving to page 2 for Automotive/Exterior Accessories
+[2025-04-08T04:04:07.073+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:07.563+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 48 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:07.581+0000] {test_crawl_list_product.py:209} INFO - Page 2 for Automotive/Exterior Accessories : Crawled 24 items in 5.69 seconds
+[2025-04-08T04:04:07.621+0000] {test_crawl_list_product.py:218} INFO - Moving to page 3 for Automotive/Exterior Accessories
+[2025-04-08T04:04:11.209+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:11.506+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 72 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:11.511+0000] {test_crawl_list_product.py:209} INFO - Page 3 for Automotive/Exterior Accessories : Crawled 24 items in 3.89 seconds
+[2025-04-08T04:04:11.554+0000] {test_crawl_list_product.py:218} INFO - Moving to page 4 for Automotive/Exterior Accessories
+[2025-04-08T04:04:17.198+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:17.353+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 96 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:17.356+0000] {test_crawl_list_product.py:209} INFO - Page 4 for Automotive/Exterior Accessories : Crawled 24 items in 5.80 seconds
+[2025-04-08T04:04:17.396+0000] {test_crawl_list_product.py:218} INFO - Moving to page 5 for Automotive/Exterior Accessories
+[2025-04-08T04:04:26.466+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:26.764+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 120 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:26.769+0000] {test_crawl_list_product.py:209} INFO - Page 5 for Automotive/Exterior Accessories : Crawled 24 items in 9.37 seconds
+[2025-04-08T04:04:26.823+0000] {test_crawl_list_product.py:218} INFO - Moving to page 6 for Automotive/Exterior Accessories
+[2025-04-08T04:04:31.593+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:31.778+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 144 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:31.779+0000] {test_crawl_list_product.py:209} INFO - Page 6 for Automotive/Exterior Accessories : Crawled 24 items in 4.95 seconds
+[2025-04-08T04:04:31.818+0000] {test_crawl_list_product.py:218} INFO - Moving to page 7 for Automotive/Exterior Accessories
+[2025-04-08T04:04:35.158+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:35.248+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 168 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:35.249+0000] {test_crawl_list_product.py:209} INFO - Page 7 for Automotive/Exterior Accessories : Crawled 24 items in 3.43 seconds
+[2025-04-08T04:04:35.278+0000] {test_crawl_list_product.py:218} INFO - Moving to page 8 for Automotive/Exterior Accessories
+[2025-04-08T04:04:38.390+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:38.515+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 192 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:38.516+0000] {test_crawl_list_product.py:209} INFO - Page 8 for Automotive/Exterior Accessories : Crawled 24 items in 3.24 seconds
+[2025-04-08T04:04:38.543+0000] {test_crawl_list_product.py:218} INFO - Moving to page 9 for Automotive/Exterior Accessories
+[2025-04-08T04:04:42.846+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:42.958+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 216 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:42.959+0000] {test_crawl_list_product.py:209} INFO - Page 9 for Automotive/Exterior Accessories : Crawled 24 items in 4.41 seconds
+[2025-04-08T04:04:42.983+0000] {test_crawl_list_product.py:218} INFO - Moving to page 10 for Automotive/Exterior Accessories
+[2025-04-08T04:04:45.752+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:45.835+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 240 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:45.836+0000] {test_crawl_list_product.py:209} INFO - Page 10 for Automotive/Exterior Accessories : Crawled 24 items in 2.85 seconds
+[2025-04-08T04:04:45.853+0000] {test_crawl_list_product.py:218} INFO - Moving to page 11 for Automotive/Exterior Accessories
+[2025-04-08T04:04:48.623+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:48.700+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 264 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:48.701+0000] {test_crawl_list_product.py:209} INFO - Page 11 for Automotive/Exterior Accessories : Crawled 24 items in 2.85 seconds
+[2025-04-08T04:04:48.717+0000] {test_crawl_list_product.py:218} INFO - Moving to page 12 for Automotive/Exterior Accessories
+[2025-04-08T04:04:52.667+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:52.830+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 288 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:52.831+0000] {test_crawl_list_product.py:209} INFO - Page 12 for Automotive/Exterior Accessories : Crawled 24 items in 4.11 seconds
+[2025-04-08T04:04:52.862+0000] {test_crawl_list_product.py:218} INFO - Moving to page 13 for Automotive/Exterior Accessories
+[2025-04-08T04:04:56.134+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:04:56.292+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 312 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:04:56.299+0000] {test_crawl_list_product.py:209} INFO - Page 13 for Automotive/Exterior Accessories : Crawled 24 items in 3.44 seconds
+[2025-04-08T04:04:56.342+0000] {test_crawl_list_product.py:218} INFO - Moving to page 14 for Automotive/Exterior Accessories
+[2025-04-08T04:05:00.133+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:00.323+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 336 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:00.326+0000] {test_crawl_list_product.py:209} INFO - Page 14 for Automotive/Exterior Accessories : Crawled 24 items in 3.98 seconds
+[2025-04-08T04:05:00.358+0000] {test_crawl_list_product.py:218} INFO - Moving to page 15 for Automotive/Exterior Accessories
+[2025-04-08T04:05:03.876+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:04.022+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 360 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:04.023+0000] {test_crawl_list_product.py:209} INFO - Page 15 for Automotive/Exterior Accessories : Crawled 24 items in 3.66 seconds
+[2025-04-08T04:05:04.049+0000] {test_crawl_list_product.py:218} INFO - Moving to page 16 for Automotive/Exterior Accessories
+[2025-04-08T04:05:07.591+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:07.675+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 384 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:07.675+0000] {test_crawl_list_product.py:209} INFO - Page 16 for Automotive/Exterior Accessories : Crawled 24 items in 3.63 seconds
+[2025-04-08T04:05:07.697+0000] {test_crawl_list_product.py:218} INFO - Moving to page 17 for Automotive/Exterior Accessories
+[2025-04-08T04:05:10.475+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:10.644+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 408 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:10.645+0000] {test_crawl_list_product.py:209} INFO - Page 17 for Automotive/Exterior Accessories : Crawled 24 items in 2.95 seconds
+[2025-04-08T04:05:10.674+0000] {test_crawl_list_product.py:218} INFO - Moving to page 18 for Automotive/Exterior Accessories
+[2025-04-08T04:05:14.837+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:15.061+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 432 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:15.062+0000] {test_crawl_list_product.py:209} INFO - Page 18 for Automotive/Exterior Accessories : Crawled 24 items in 4.39 seconds
+[2025-04-08T04:05:15.103+0000] {test_crawl_list_product.py:218} INFO - Moving to page 19 for Automotive/Exterior Accessories
+[2025-04-08T04:05:18.926+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:19.059+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 456 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:19.062+0000] {test_crawl_list_product.py:209} INFO - Page 19 for Automotive/Exterior Accessories : Crawled 24 items in 3.96 seconds
+[2025-04-08T04:05:19.085+0000] {test_crawl_list_product.py:218} INFO - Moving to page 20 for Automotive/Exterior Accessories
+[2025-04-08T04:05:26.680+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:26.875+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 480 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:26.876+0000] {test_crawl_list_product.py:209} INFO - Page 20 for Automotive/Exterior Accessories : Crawled 24 items in 7.79 seconds
+[2025-04-08T04:05:26.901+0000] {test_crawl_list_product.py:218} INFO - Moving to page 21 for Automotive/Exterior Accessories
+[2025-04-08T04:05:30.117+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:30.237+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 504 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:30.239+0000] {test_crawl_list_product.py:209} INFO - Page 21 for Automotive/Exterior Accessories : Crawled 24 items in 3.34 seconds
+[2025-04-08T04:05:30.264+0000] {test_crawl_list_product.py:218} INFO - Moving to page 22 for Automotive/Exterior Accessories
+[2025-04-08T04:05:38.247+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:38.346+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 528 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:38.347+0000] {test_crawl_list_product.py:209} INFO - Page 22 for Automotive/Exterior Accessories : Crawled 24 items in 8.08 seconds
+[2025-04-08T04:05:38.368+0000] {test_crawl_list_product.py:218} INFO - Moving to page 23 for Automotive/Exterior Accessories
+[2025-04-08T04:05:46.492+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:46.669+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 552 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:46.672+0000] {test_crawl_list_product.py:209} INFO - Page 23 for Automotive/Exterior Accessories : Crawled 24 items in 8.30 seconds
+[2025-04-08T04:05:46.710+0000] {test_crawl_list_product.py:218} INFO - Moving to page 24 for Automotive/Exterior Accessories
+[2025-04-08T04:05:51.317+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:51.813+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 576 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:51.815+0000] {test_crawl_list_product.py:209} INFO - Page 24 for Automotive/Exterior Accessories : Crawled 24 items in 5.10 seconds
+[2025-04-08T04:05:51.858+0000] {test_crawl_list_product.py:218} INFO - Moving to page 25 for Automotive/Exterior Accessories
+[2025-04-08T04:05:55.754+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:55.883+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 600 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:55.884+0000] {test_crawl_list_product.py:209} INFO - Page 25 for Automotive/Exterior Accessories : Crawled 24 items in 4.02 seconds
+[2025-04-08T04:05:55.908+0000] {test_crawl_list_product.py:218} INFO - Moving to page 26 for Automotive/Exterior Accessories
+[2025-04-08T04:05:59.584+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:05:59.696+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 624 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:05:59.698+0000] {test_crawl_list_product.py:209} INFO - Page 26 for Automotive/Exterior Accessories : Crawled 24 items in 3.79 seconds
+[2025-04-08T04:05:59.735+0000] {test_crawl_list_product.py:218} INFO - Moving to page 27 for Automotive/Exterior Accessories
+[2025-04-08T04:06:02.717+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:06:02.802+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 648 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:06:02.803+0000] {test_crawl_list_product.py:209} INFO - Page 27 for Automotive/Exterior Accessories : Crawled 24 items in 3.07 seconds
+[2025-04-08T04:06:02.819+0000] {test_crawl_list_product.py:218} INFO - Moving to page 28 for Automotive/Exterior Accessories
+[2025-04-08T04:06:05.799+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:06:05.898+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 672 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:06:05.899+0000] {test_crawl_list_product.py:209} INFO - Page 28 for Automotive/Exterior Accessories : Crawled 24 items in 3.08 seconds
+[2025-04-08T04:06:05.920+0000] {test_crawl_list_product.py:218} INFO - Moving to page 29 for Automotive/Exterior Accessories
+[2025-04-08T04:06:08.836+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:06:08.957+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 696 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:06:08.958+0000] {test_crawl_list_product.py:209} INFO - Page 29 for Automotive/Exterior Accessories : Crawled 24 items in 3.04 seconds
+[2025-04-08T04:06:08.980+0000] {test_crawl_list_product.py:218} INFO - Moving to page 30 for Automotive/Exterior Accessories
+[2025-04-08T04:06:12.820+0000] {test_crawl_list_product.py:70} INFO - Detected layout: tiles
+[2025-04-08T04:06:12.937+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 720 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T04:06:12.938+0000] {test_crawl_list_product.py:209} INFO - Page 30 for Automotive/Exterior Accessories : Crawled 24 items in 3.96 seconds
+[2025-04-08T04:06:12.954+0000] {test_crawl_list_product.py:218} INFO - Moving to page 31 for Automotive/Exterior Accessories
+[2025-04-08T04:06:13.591+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-04-08T04:06:13.629+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-08T04:06:13.639+0000] {process_utils.py:132} INFO - Sending 15 to group 7095. PIDs of all processes in the group: [7230, 7244, 7307, 7308, 7356, 7357, 7433, 7557, 7694, 7354, 7095]
+[2025-04-08T04:06:13.641+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 7095
+[2025-04-08T04:06:13.643+0000] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-08T04:06:14.157+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7694, status='terminated', started='04:04:04') (7694) terminated with exit code None
+[2025-04-08T04:06:14.159+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7354, status='terminated', started='04:03:42') (7354) terminated with exit code None
+[2025-04-08T04:06:14.159+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7557, status='terminated', started='04:03:56') (7557) terminated with exit code None
+[2025-04-08T04:06:14.160+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7357, status='terminated', started='04:03:43') (7357) terminated with exit code None
+[2025-04-08T04:06:14.161+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7433, status='terminated', started='04:03:46') (7433) terminated with exit code None
+[2025-04-08T04:06:14.307+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7307, status='terminated', started='04:03:42') (7307) terminated with exit code None
+[2025-04-08T04:06:14.310+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7356, status='terminated', started='04:03:42') (7356) terminated with exit code None
+[2025-04-08T04:06:14.345+0000] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/***/.local/bin/***", line 8, in <module>
+    sys.exit(main())
+  File "/home/***/.local/lib/python3.12/site-packages/***/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 64, in wrapper
+    providers_configuration_loaded(func)(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 237, in worker
+    _run_command_with_daemon_option(
+  File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 50, in _run_command_with_daemon_option
+    run_command_with_daemon_option(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 230, in run_celery_worker
+    celery_app.worker_main(options)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/app/base.py", line 391, in worker_main
+    self.start(argv=argv)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/app/base.py", line 371, in start
+    celery.main(args=argv, standalone_mode=False)
+  File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/bin/base.py", line 135, in caller
+    return f(ctx, *args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/bin/worker.py", line 356, in worker
+    worker.start()
+  File "/home/***/.local/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+  File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/base.py", line 130, in start
+    self.on_start()
+  File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/prefork.py", line 109, in on_start
+    P = self._pool = Pool(processes=self.limit,
+  File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/asynpool.py", line 464, in __init__
+    super().__init__(processes, *args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/asynpool.py", line 482, in _create_worker_process
+    return super()._create_worker_process(i)
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/process.py", line 120, in start
+    self._popen = self._Popen(self)
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/context.py", line 331, in _Popen
+    return Popen(process_obj)
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/popen_fork.py", line 22, in __init__
+    self._launch(process_obj)
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/popen_fork.py", line 77, in _launch
+    code = process_obj._bootstrap()
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/process.py", line 323, in _bootstrap
+    self.run()
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/process.py", line 110, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+  File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "/home/***/.local/lib/python3.12/site-packages/celery/app/trace.py", line 651, in fast_trace_task
+    R, I, T, Rstr = tasks[task].__trace__(
+  File "/home/***/.local/lib/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/executors/celery_executor_utils.py", line 139, in execute_command
+    _execute_in_fork(command_to_exec, celery_task_id)
+  File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/executors/celery_executor_utils.py", line 171, in _execute_in_fork
+    args.func(args)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/***/.local/lib/python3.12/site-packages/***/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/***/.local/lib/python3.12/site-packages/***/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/***/.local/lib/python3.12/site-packages/***/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/***/dags/test_crawl_list_product.py", line 230, in scrape_department
+    scraper.scrape(url, department, sub_department)
+  File "/opt/***/dags/test_crawl_list_product.py", line 199, in scrape
+    self.driver.get(url)
+  File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 427, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/***/.local/lib/python3.12/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/local/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+  File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-04-08T04:06:14.352+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb1e9406de0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/7498079849f9e3eb89bb713ee94fedf2
+[2025-04-08T04:06:14.354+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb1e9b379e0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/7498079849f9e3eb89bb713ee94fedf2
+[2025-04-08T04:06:14.356+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb1e9407080>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/7498079849f9e3eb89bb713ee94fedf2
+[2025-04-08T04:06:14.364+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7230, status='terminated', started='04:03:40') (7230) terminated with exit code None
+[2025-04-08T04:06:14.365+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7308, status='terminated', started='04:03:42') (7308) terminated with exit code None
+[2025-04-08T04:06:14.426+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-08T04:06:14.501+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7095, status='terminated', exitcode=0, started='04:03:16') (7095) terminated with exit code 0
+[2025-04-08T04:06:14.502+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7244, status='terminated', started='04:03:40') (7244) terminated with exit code None

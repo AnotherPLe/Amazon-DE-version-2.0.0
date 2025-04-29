@@ -1,0 +1,37 @@
+[2025-04-07T17:09:22.965+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-07T17:09:23.041+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Motorcycle___Powersports_5 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:09:23.060+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Motorcycle___Powersports_5 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:09:23.061+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-07T17:09:23.099+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_Motorcycle___Powersports_5> on 2025-04-07 17:08:36.747176+00:00
+[2025-04-07T17:09:23.130+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5055) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T17:09:23.135+0000] {standard_task_runner.py:72} INFO - Started process 6528 to run task
+[2025-04-07T17:09:23.138+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_Motorcycle___Powersports_5', 'manual__2025-04-07T17:08:36.747176+00:00', '--job-id', '97', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmp0qzy76uu']
+[2025-04-07T17:09:23.140+0000] {standard_task_runner.py:105} INFO - Job 97: Subtask process_Motorcycle___Powersports_5
+[2025-04-07T17:09:23.359+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_Motorcycle___Powersports_5 manual__2025-04-07T17:08:36.747176+00:00 [running]> on host 13b4251b7529
+[2025-04-07T17:09:23.792+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_Motorcycle___Powersports_5' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T17:08:36.747176+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T17:08:36.747176+00:00'
+[2025-04-07T17:09:23.799+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-07T17:09:23.800+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-07T17:09:23.800+0000] {logging_mixin.py:190} INFO - Current task name:process_Motorcycle___Powersports_5 state:running start_date:2025-04-07 17:09:23.043089+00:00
+[2025-04-07T17:09:23.801+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-07T17:09:23.802+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-07T17:09:23.804+0000] {test_crawl_list_product.py:227} INFO - Processing: Automotive/Motorcycle & Powersports - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A346333011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_motorcycle_powersports_0_2_10_7
+[2025-04-07T17:09:23.972+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-07T17:09:24.847+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:25.038+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:25.276+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-07T17:09:43.380+0000] {test_crawl_list_product.py:71} WARNING - Could not detect layout, using default (tiles)
+[2025-04-07T17:09:43.449+0000] {test_crawl_list_product.py:191} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/pt1_20250407/part1_data_Automotive_Motorcycle & Powersports_20250407.csv
+[2025-04-07T17:09:43.454+0000] {test_crawl_list_product.py:208} INFO - Page 1 for Automotive/Motorcycle & Powersports : Crawled 0 items in 16.21 seconds
+[2025-04-07T17:09:43.490+0000] {test_crawl_list_product.py:212} INFO - Reached the last page (Page 1) for Automotive/Motorcycle & Powersports
+[2025-04-07T17:09:46.535+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-07T17:09:46.555+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-07T17:09:46.556+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_amazon_dag, task_id=process_Motorcycle___Powersports_5, run_id=manual__2025-04-07T17:08:36.747176+00:00, execution_date=20250407T170836, start_date=20250407T170923, end_date=20250407T170946
+[2025-04-07T17:09:46.600+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-07T17:09:46.601+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-07T17:09:46.602+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag queued_at:2025-04-07 17:08:36.770900+00:00
+[2025-04-07T17:09:46.603+0000] {logging_mixin.py:190} INFO - Task hostname:13b4251b7529 operator:PythonOperator
+[2025-04-07T17:09:46.646+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-07T17:09:46.671+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T17:09:46.676+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

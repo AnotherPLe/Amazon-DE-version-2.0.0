@@ -1,0 +1,75 @@
+[2025-04-04T19:28:30.599+0000] {processor.py:186} INFO - Started process (PID=1379) to work on /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:28:30.600+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crawl_overview_dag.py for tasks to queue
+[2025-04-04T19:28:30.603+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:28:30.602+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:28:30.883+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:28:30.875+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/crawl_overview_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/crawl_overview_dag.py", line 295, in <module>
+    start_date=next_wednesday(datetime.today()),
+                              ^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'today'
+[2025-04-04T19:28:30.888+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:28:30.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crawl_overview_dag.py took 0.334 seconds
+[2025-04-04T19:29:01.409+0000] {processor.py:186} INFO - Started process (PID=1444) to work on /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:29:01.410+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crawl_overview_dag.py for tasks to queue
+[2025-04-04T19:29:01.412+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:29:01.412+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:29:01.836+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:29:01.830+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/crawl_overview_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/crawl_overview_dag.py", line 295, in <module>
+    start_date=next_wednesday(datetime.today()),
+                              ^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'today'
+[2025-04-04T19:29:01.837+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:29:01.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crawl_overview_dag.py took 0.464 seconds
+[2025-04-04T19:29:32.016+0000] {processor.py:186} INFO - Started process (PID=1508) to work on /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:29:32.017+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crawl_overview_dag.py for tasks to queue
+[2025-04-04T19:29:32.019+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:29:32.018+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:29:32.452+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:29:32.444+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/crawl_overview_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/crawl_overview_dag.py", line 295, in <module>
+    start_date=next_wednesday(datetime.today()),
+                              ^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'today'
+[2025-04-04T19:29:32.454+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:29:32.481+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crawl_overview_dag.py took 0.473 seconds
+[2025-04-04T19:30:02.666+0000] {processor.py:186} INFO - Started process (PID=1572) to work on /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:30:02.668+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crawl_overview_dag.py for tasks to queue
+[2025-04-04T19:30:02.670+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:30:02.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:30:03.147+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:30:03.141+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/crawl_overview_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/crawl_overview_dag.py", line 295, in <module>
+    start_date=next_wednesday(datetime.today()),
+                              ^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'today'
+[2025-04-04T19:30:03.149+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:30:03.180+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crawl_overview_dag.py took 0.524 seconds
+[2025-04-04T19:30:33.900+0000] {processor.py:186} INFO - Started process (PID=1637) to work on /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:30:33.901+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crawl_overview_dag.py for tasks to queue
+[2025-04-04T19:30:33.903+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:30:33.902+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:30:34.346+0000] {logging_mixin.py:190} INFO - [2025-04-04T19:30:34.341+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/crawl_overview_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/crawl_overview_dag.py", line 295, in <module>
+    start_date=next_wednesday(datetime.today()),
+                              ^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'today'
+[2025-04-04T19:30:34.348+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/crawl_overview_dag.py
+[2025-04-04T19:30:34.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crawl_overview_dag.py took 0.480 seconds

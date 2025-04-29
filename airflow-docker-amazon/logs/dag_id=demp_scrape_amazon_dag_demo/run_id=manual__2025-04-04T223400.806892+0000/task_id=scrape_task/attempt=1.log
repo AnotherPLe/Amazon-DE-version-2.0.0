@@ -1,0 +1,148 @@
+[2025-04-04T22:34:04.299+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-04T22:34:04.319+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-04T22:34:00.806892+00:00 [queued]>
+[2025-04-04T22:34:04.330+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-04T22:34:00.806892+00:00 [queued]>
+[2025-04-04T22:34:04.330+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-04-04T22:34:04.486+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): scrape_task> on 2025-04-04 22:34:00.806892+00:00
+[2025-04-04T22:34:04.495+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=4407) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-04T22:34:04.497+0000] {standard_task_runner.py:72} INFO - Started process 4410 to run task
+[2025-04-04T22:34:04.499+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'demp_scrape_amazon_dag_demo', 'scrape_task', 'manual__2025-04-04T22:34:00.806892+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/another_test.py', '--cfg-path', '/tmp/tmp86obwqg_']
+[2025-04-04T22:34:04.502+0000] {standard_task_runner.py:105} INFO - Job 43: Subtask scrape_task
+[2025-04-04T22:34:04.566+0000] {task_command.py:467} INFO - Running <TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-04T22:34:00.806892+00:00 [running]> on host ba893f484bac
+[2025-04-04T22:34:04.698+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demp_scrape_amazon_dag_demo' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-04T22:34:00.806892+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-04T22:34:00.806892+00:00'
+[2025-04-04T22:34:04.700+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-04T22:34:04.700+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-04T22:34:04.701+0000] {logging_mixin.py:190} INFO - Current task name:scrape_task state:running start_date:2025-04-04 22:34:04.320577+00:00
+[2025-04-04T22:34:04.702+0000] {logging_mixin.py:190} INFO - Dag name:demp_scrape_amazon_dag_demo and current dag run status:running
+[2025-04-04T22:34:04.702+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-04T22:34:04.717+0000] {another_test.py:261} INFO - Processing: Automotive/Car Care - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718271&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_care_0_2_10_2
+[2025-04-04T22:34:04.764+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:04.794+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:04.948+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:05.048+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:05.599+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:05.874+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:08.603+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:08.670+0000] {another_test.py:261} INFO - Processing: Automotive/Car Electronics & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2230642011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_electronics_accessories_0_2_10_3
+[2025-04-04T22:34:08.710+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:08.733+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:08.834+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:08.927+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:09.409+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:09.661+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:09.781+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:09.804+0000] {another_test.py:261} INFO - Processing: Automotive/Exterior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857511&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_exterior_accessories__0_2_10_4
+[2025-04-04T22:34:09.850+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:09.870+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:09.975+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:10.088+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:10.540+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:10.785+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:10.895+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:10.912+0000] {another_test.py:261} INFO - Processing: Automotive/Interior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5
+[2025-04-04T22:34:10.949+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:10.968+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:11.071+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:11.180+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:11.615+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:11.841+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:11.950+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:11.966+0000] {another_test.py:261} INFO - Processing: Automotive/Lights & Lighting Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15736321&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_lights_lighting_accessories_0_2_10_6
+[2025-04-04T22:34:12.005+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:12.027+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:12.127+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:12.230+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:12.650+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:12.889+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:12.999+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:13.014+0000] {another_test.py:261} INFO - Processing: Automotive/Motorcycle & Powersports - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A346333011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_motorcycle_powersports_0_2_10_7
+[2025-04-04T22:34:13.060+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:13.079+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:13.191+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:13.294+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:13.770+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:14.014+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:14.126+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:14.143+0000] {another_test.py:261} INFO - Processing: Automotive/Oils & Fluids - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718791&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_oils_fluid_0_2_10_8
+[2025-04-04T22:34:14.183+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:14.205+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:14.308+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:14.407+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:14.829+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:15.058+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:15.366+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:15.384+0000] {another_test.py:261} INFO - Processing: Automotive/Paint & Paint Supplies - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A13591416011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_paint_paint_supplies_0_2_10_9
+[2025-04-04T22:34:15.425+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:15.451+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:15.692+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:15.985+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:16.894+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:17.357+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:17.465+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:17.483+0000] {another_test.py:261} INFO - Processing: Automotive/Performance Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15710351&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_performance_parts_accessories_0_2_10_10
+[2025-04-04T22:34:17.526+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:17.550+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:17.669+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:17.802+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:18.218+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:18.455+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:18.564+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:18.581+0000] {another_test.py:261} INFO - Processing: Automotive/Replacement Parts - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15719731&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_replacement_parts_0_2_10_11
+[2025-04-04T22:34:18.623+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:18.646+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:18.756+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:18.861+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:19.266+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:19.488+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:19.611+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:19.631+0000] {another_test.py:261} INFO - Processing: Automotive/RV Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2258019011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_rv_parts_accessories_0_2_10_12
+[2025-04-04T22:34:19.699+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:19.728+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:19.834+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:19.936+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:20.360+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:20.610+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:20.728+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:20.746+0000] {another_test.py:261} INFO - Processing: Automotive/Tires & Wheels - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15706571&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_tires_wheels_0_2_10_13
+[2025-04-04T22:34:20.790+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:20.816+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:20.916+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:21.012+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:21.438+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:21.661+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:21.786+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:21.804+0000] {another_test.py:261} INFO - Processing: Automotive/Tools & Equipment - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15706941&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_tools_equipment_0_2_10_14
+[2025-04-04T22:34:21.875+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:21.908+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:22.035+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:22.144+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:22.650+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:22.885+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:22.992+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:23.014+0000] {another_test.py:261} INFO - Processing: Automotive/Automotive Enthusiast Merchandise - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2204830011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_automotive_enthusiast_merchandise_0_2_10_15
+[2025-04-04T22:34:23.102+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:23.135+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:23.232+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:23.341+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:23.801+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:24.019+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:24.123+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:24.142+0000] {another_test.py:261} INFO - Processing: Automotive/Heavy Duty & Commercial Vehicle Equipment - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15682003011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_heavyduty_commercial_0_2_10_16
+[2025-04-04T22:34:24.194+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:34:24.219+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:24.315+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:34:24.422+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:34:24.831+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:25.058+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:34:25.174+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-04-04T22:34:25.192+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-04T22:34:25.208+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-04T22:34:25.210+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=demp_scrape_amazon_dag_demo, task_id=scrape_task, run_id=manual__2025-04-04T22:34:00.806892+00:00, execution_date=20250404T223400, start_date=20250404T223404, end_date=20250404T223425
+[2025-04-04T22:34:25.298+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-04T22:34:25.299+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-04T22:34:25.300+0000] {logging_mixin.py:190} INFO - Dag name:demp_scrape_amazon_dag_demo queued_at:2025-04-04 22:34:00.823025+00:00
+[2025-04-04T22:34:25.300+0000] {logging_mixin.py:190} INFO - Task hostname:ba893f484bac operator:PythonOperator
+[2025-04-04T22:34:25.315+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-04T22:34:25.332+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-04T22:34:25.342+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

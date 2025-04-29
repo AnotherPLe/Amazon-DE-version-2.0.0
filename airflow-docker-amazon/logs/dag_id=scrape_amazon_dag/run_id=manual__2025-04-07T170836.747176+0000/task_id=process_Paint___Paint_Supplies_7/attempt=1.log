@@ -1,0 +1,37 @@
+[2025-04-07T17:09:23.173+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-07T17:09:23.244+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Paint___Paint_Supplies_7 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:09:23.312+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Paint___Paint_Supplies_7 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:09:23.324+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-07T17:09:23.438+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_Paint___Paint_Supplies_7> on 2025-04-07 17:08:36.747176+00:00
+[2025-04-07T17:09:23.458+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5056) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T17:09:23.460+0000] {standard_task_runner.py:72} INFO - Started process 6530 to run task
+[2025-04-07T17:09:23.459+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_Paint___Paint_Supplies_7', 'manual__2025-04-07T17:08:36.747176+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmp6p9u_ttz']
+[2025-04-07T17:09:23.493+0000] {standard_task_runner.py:105} INFO - Job 100: Subtask process_Paint___Paint_Supplies_7
+[2025-04-07T17:09:23.660+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_Paint___Paint_Supplies_7 manual__2025-04-07T17:08:36.747176+00:00 [running]> on host 13b4251b7529
+[2025-04-07T17:09:23.976+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_Paint___Paint_Supplies_7' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T17:08:36.747176+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T17:08:36.747176+00:00'
+[2025-04-07T17:09:23.983+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-07T17:09:23.984+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-07T17:09:23.985+0000] {logging_mixin.py:190} INFO - Current task name:process_Paint___Paint_Supplies_7 state:running start_date:2025-04-07 17:09:23.270545+00:00
+[2025-04-07T17:09:23.987+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-07T17:09:23.990+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-07T17:09:23.996+0000] {test_crawl_list_product.py:227} INFO - Processing: Automotive/Paint & Paint Supplies - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A13591416011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_paint_paint_supplies_0_2_10_9
+[2025-04-07T17:09:24.175+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-07T17:09:24.874+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:25.103+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:25.321+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-07T17:09:43.715+0000] {test_crawl_list_product.py:71} WARNING - Could not detect layout, using default (tiles)
+[2025-04-07T17:09:43.753+0000] {test_crawl_list_product.py:191} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/pt1_20250407/part1_data_Automotive_Paint & Paint Supplies_20250407.csv
+[2025-04-07T17:09:43.754+0000] {test_crawl_list_product.py:208} INFO - Page 1 for Automotive/Paint & Paint Supplies : Crawled 0 items in 15.02 seconds
+[2025-04-07T17:09:43.770+0000] {test_crawl_list_product.py:212} INFO - Reached the last page (Page 1) for Automotive/Paint & Paint Supplies
+[2025-04-07T17:09:45.488+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-07T17:09:45.522+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-07T17:09:45.523+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_amazon_dag, task_id=process_Paint___Paint_Supplies_7, run_id=manual__2025-04-07T17:08:36.747176+00:00, execution_date=20250407T170836, start_date=20250407T170923, end_date=20250407T170945
+[2025-04-07T17:09:45.682+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-07T17:09:45.688+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-07T17:09:45.689+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag queued_at:2025-04-07 17:08:36.770900+00:00
+[2025-04-07T17:09:45.701+0000] {logging_mixin.py:190} INFO - Task hostname:13b4251b7529 operator:PythonOperator
+[2025-04-07T17:09:45.794+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-07T17:09:45.835+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T17:09:45.856+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

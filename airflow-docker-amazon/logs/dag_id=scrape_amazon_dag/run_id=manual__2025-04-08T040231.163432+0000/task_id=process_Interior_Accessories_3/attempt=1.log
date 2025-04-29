@@ -1,0 +1,60 @@
+[2025-04-08T04:02:41.565+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-08T04:02:41.635+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Interior_Accessories_3 manual__2025-04-08T04:02:31.163432+00:00 [queued]>
+[2025-04-08T04:02:41.674+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Interior_Accessories_3 manual__2025-04-08T04:02:31.163432+00:00 [queued]>
+[2025-04-08T04:02:41.682+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-08T04:02:41.813+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_Interior_Accessories_3> on 2025-04-08 04:02:31.163432+00:00
+[2025-04-08T04:02:41.839+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5738) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-08T04:02:41.858+0000] {standard_task_runner.py:72} INFO - Started process 5777 to run task
+[2025-04-08T04:02:41.893+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_Interior_Accessories_3', 'manual__2025-04-08T04:02:31.163432+00:00', '--job-id', '159', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmpszdm2ki1']
+[2025-04-08T04:02:41.901+0000] {standard_task_runner.py:105} INFO - Job 159: Subtask process_Interior_Accessories_3
+[2025-04-08T04:02:42.177+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_Interior_Accessories_3 manual__2025-04-08T04:02:31.163432+00:00 [running]> on host 13b4251b7529
+[2025-04-08T04:02:42.611+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_Interior_Accessories_3' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T04:02:31.163432+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T04:02:31.163432+00:00'
+[2025-04-08T04:02:42.622+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-08T04:02:42.623+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-08T04:02:42.632+0000] {logging_mixin.py:190} INFO - Current task name:process_Interior_Accessories_3 state:running start_date:2025-04-08 04:02:41.637728+00:00
+[2025-04-08T04:02:42.634+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-08T04:02:42.635+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-08T04:02:42.638+0000] {test_crawl_list_product.py:228} INFO - Processing: Automotive/Interior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5
+[2025-04-08T04:02:42.984+0000] {test_crawl_list_product.py:46} INFO - Using user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[2025-04-08T04:02:42.987+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T04:02:44.491+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T04:02:44.841+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T04:02:45.047+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T04:03:00.077+0000] {job.py:229} INFO - Heartbeat recovered after 13.08 seconds
+[2025-04-08T04:03:07.343+0000] {job.py:229} INFO - Heartbeat recovered after 14.78 seconds
+[2025-04-08T04:03:16.187+0000] {test_crawl_list_product.py:221} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5: Message: 
+Stacktrace:
+#0 0x55ce0917ae6a <unknown>
+#1 0x55ce08c2c640 <unknown>
+#2 0x55ce08c7db5a <unknown>
+#3 0x55ce08c7dd51 <unknown>
+#4 0x55ce08ccc344 <unknown>
+#5 0x55ce08ca377d <unknown>
+#6 0x55ce08cc97b5 <unknown>
+#7 0x55ce08ca3523 <unknown>
+#8 0x55ce08c6fef3 <unknown>
+#9 0x55ce08c70b51 <unknown>
+#10 0x55ce0913fd2b <unknown>
+#11 0x55ce09143c01 <unknown>
+#12 0x55ce09127512 <unknown>
+#13 0x55ce09144774 <unknown>
+#14 0x55ce0910b90f <unknown>
+#15 0x55ce09168fb8 <unknown>
+#16 0x55ce09169196 <unknown>
+#17 0x55ce09179cb6 <unknown>
+#18 0x7f37a9bde1c4 <unknown>
+
+[2025-04-08T04:03:18.420+0000] {test_crawl_list_product.py:192} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/pt1_20250408/part1_data_Automotive_Interior Accessories_20250408.csv
+[2025-04-08T04:03:30.876+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-08T04:03:35.883+0000] {job.py:229} INFO - Heartbeat recovered after 18.97 seconds
+[2025-04-08T04:03:36.426+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-08T04:03:36.432+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_amazon_dag, task_id=process_Interior_Accessories_3, run_id=manual__2025-04-08T04:02:31.163432+00:00, execution_date=20250408T040231, start_date=20250408T040241, end_date=20250408T040336
+[2025-04-08T04:03:36.727+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-08T04:03:36.750+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-08T04:03:36.755+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag queued_at:2025-04-08 04:02:31.265789+00:00
+[2025-04-08T04:03:36.792+0000] {logging_mixin.py:190} INFO - Task hostname:13b4251b7529 operator:PythonOperator
+[2025-04-08T04:03:36.996+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-08T04:03:37.133+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T04:03:37.153+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

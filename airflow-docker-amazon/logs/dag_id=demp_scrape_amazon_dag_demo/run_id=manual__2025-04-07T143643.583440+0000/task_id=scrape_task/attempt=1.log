@@ -1,0 +1,43 @@
+[2025-04-07T14:36:46.363+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-07T14:36:46.390+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-07T14:36:43.583440+00:00 [queued]>
+[2025-04-07T14:36:46.402+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-07T14:36:43.583440+00:00 [queued]>
+[2025-04-07T14:36:46.403+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-04-07T14:36:46.430+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): scrape_task> on 2025-04-07 14:36:43.583440+00:00
+[2025-04-07T14:36:46.437+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1390) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T14:36:46.439+0000] {standard_task_runner.py:72} INFO - Started process 1393 to run task
+[2025-04-07T14:36:46.440+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'demp_scrape_amazon_dag_demo', 'scrape_task', 'manual__2025-04-07T14:36:43.583440+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/another_test.py', '--cfg-path', '/tmp/tmp1kgn9_ah']
+[2025-04-07T14:36:46.441+0000] {standard_task_runner.py:105} INFO - Job 53: Subtask scrape_task
+[2025-04-07T14:36:46.516+0000] {task_command.py:467} INFO - Running <TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-07T14:36:43.583440+00:00 [running]> on host ba893f484bac
+[2025-04-07T14:36:46.643+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demp_scrape_amazon_dag_demo' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T14:36:43.583440+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T14:36:43.583440+00:00'
+[2025-04-07T14:36:46.644+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-07T14:36:46.646+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-07T14:36:46.647+0000] {logging_mixin.py:190} INFO - Current task name:scrape_task state:running start_date:2025-04-07 14:36:46.391000+00:00
+[2025-04-07T14:36:46.647+0000] {logging_mixin.py:190} INFO - Dag name:demp_scrape_amazon_dag_demo and current dag run status:running
+[2025-04-07T14:36:46.648+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-07T14:36:46.664+0000] {another_test.py:265} INFO - Processing: Automotive/Car Care - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718271&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_care_0_2_10_2
+[2025-04-07T14:36:46.776+0000] {another_test.py:265} INFO - Processing: Automotive/Car Electronics & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2230642011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_electronics_accessories_0_2_10_3
+[2025-04-07T14:36:46.836+0000] {another_test.py:265} INFO - Processing: Automotive/Exterior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857511&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_exterior_accessories__0_2_10_4
+[2025-04-07T14:36:46.972+0000] {another_test.py:265} INFO - Processing: Automotive/Interior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5
+[2025-04-07T14:36:47.089+0000] {another_test.py:265} INFO - Processing: Automotive/Lights & Lighting Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15736321&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_lights_lighting_accessories_0_2_10_6
+[2025-04-07T14:36:47.148+0000] {another_test.py:265} INFO - Processing: Automotive/Motorcycle & Powersports - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A346333011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_motorcycle_powersports_0_2_10_7
+[2025-04-07T14:36:47.206+0000] {another_test.py:265} INFO - Processing: Automotive/Oils & Fluids - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718791&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_oils_fluid_0_2_10_8
+[2025-04-07T14:36:47.268+0000] {another_test.py:265} INFO - Processing: Automotive/Paint & Paint Supplies - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A13591416011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_paint_paint_supplies_0_2_10_9
+[2025-04-07T14:36:47.321+0000] {another_test.py:265} INFO - Processing: Automotive/Performance Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15710351&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_performance_parts_accessories_0_2_10_10
+[2025-04-07T14:36:47.372+0000] {another_test.py:265} INFO - Processing: Automotive/Replacement Parts - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15719731&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_replacement_parts_0_2_10_11
+[2025-04-07T14:36:47.471+0000] {another_test.py:265} INFO - Processing: Automotive/RV Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2258019011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_rv_parts_accessories_0_2_10_12
+[2025-04-07T14:36:47.540+0000] {another_test.py:265} INFO - Processing: Automotive/Tires & Wheels - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15706571&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_tires_wheels_0_2_10_13
+[2025-04-07T14:36:47.617+0000] {another_test.py:265} INFO - Processing: Automotive/Tools & Equipment - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15706941&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_tools_equipment_0_2_10_14
+[2025-04-07T14:36:47.675+0000] {another_test.py:265} INFO - Processing: Automotive/Automotive Enthusiast Merchandise - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2204830011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_automotive_enthusiast_merchandise_0_2_10_15
+[2025-04-07T14:36:47.739+0000] {another_test.py:265} INFO - Processing: Automotive/Heavy Duty & Commercial Vehicle Equipment - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15682003011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_heavyduty_commercial_0_2_10_16
+[2025-04-07T14:36:47.815+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-07T14:36:47.830+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-07T14:36:47.831+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=demp_scrape_amazon_dag_demo, task_id=scrape_task, run_id=manual__2025-04-07T14:36:43.583440+00:00, execution_date=20250407T143643, start_date=20250407T143646, end_date=20250407T143647
+[2025-04-07T14:36:47.866+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-07T14:36:47.867+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-07T14:36:47.868+0000] {logging_mixin.py:190} INFO - Dag name:demp_scrape_amazon_dag_demo queued_at:2025-04-07 14:36:43.593138+00:00
+[2025-04-07T14:36:47.868+0000] {logging_mixin.py:190} INFO - Task hostname:ba893f484bac operator:PythonOperator
+[2025-04-07T14:36:47.908+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-07T14:36:47.949+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T14:36:47.960+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

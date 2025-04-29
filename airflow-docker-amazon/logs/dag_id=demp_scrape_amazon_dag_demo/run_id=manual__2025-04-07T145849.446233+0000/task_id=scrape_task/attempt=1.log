@@ -1,0 +1,194 @@
+[2025-04-07T14:58:52.130+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-07T14:58:52.154+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-07T14:58:49.446233+00:00 [queued]>
+[2025-04-07T14:58:52.166+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-07T14:58:49.446233+00:00 [queued]>
+[2025-04-07T14:58:52.167+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-04-07T14:58:52.193+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): scrape_task> on 2025-04-07 14:58:49.446233+00:00
+[2025-04-07T14:58:52.200+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=136) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T14:58:52.203+0000] {standard_task_runner.py:72} INFO - Started process 139 to run task
+[2025-04-07T14:58:52.202+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'demp_scrape_amazon_dag_demo', 'scrape_task', 'manual__2025-04-07T14:58:49.446233+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/another_test.py', '--cfg-path', '/tmp/tmpovnmojmj']
+[2025-04-07T14:58:52.204+0000] {standard_task_runner.py:105} INFO - Job 58: Subtask scrape_task
+[2025-04-07T14:58:52.271+0000] {task_command.py:467} INFO - Running <TaskInstance: demp_scrape_amazon_dag_demo.scrape_task manual__2025-04-07T14:58:49.446233+00:00 [running]> on host 729426e08441
+[2025-04-07T14:58:52.404+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demp_scrape_amazon_dag_demo' AIRFLOW_CTX_TASK_ID='scrape_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T14:58:49.446233+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T14:58:49.446233+00:00'
+[2025-04-07T14:58:52.407+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-07T14:58:52.407+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-07T14:58:52.408+0000] {logging_mixin.py:190} INFO - Current task name:scrape_task state:running start_date:2025-04-07 14:58:52.155304+00:00
+[2025-04-07T14:58:52.409+0000] {logging_mixin.py:190} INFO - Dag name:demp_scrape_amazon_dag_demo and current dag run status:running
+[2025-04-07T14:58:52.409+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-07T14:58:52.425+0000] {another_test.py:265} INFO - Processing: Automotive/Car Care - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718271&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_care_0_2_10_2
+[2025-04-07T14:58:52.486+0000] {another_test.py:265} INFO - Processing: Automotive/Car Electronics & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2230642011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_electronics_accessories_0_2_10_3
+[2025-04-07T14:58:52.536+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/another_test.py", line 286, in main
+    list(executor.map(scrape_department, department_info_list))
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/another_test.py", line 266, in scrape_department
+    scraper = AmazonScraper()
+              ^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/another_test.py", line 40, in __init__
+    self.setup_driver()
+  File "/opt/airflow/dags/another_test.py", line 58, in setup_driver
+    self.driver = webdriver.Chrome(
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+[2025-04-07T14:58:52.560+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-07T14:58:52.561+0000] {logging_mixin.py:190} INFO - Task start:2025-04-07 14:58:52.155304+00:00 end:2025-04-07 14:58:52.560314+00:00 duration:0.40501
+[2025-04-07T14:58:52.562+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): scrape_task> dag:<DAG: demp_scrape_amazon_dag_demo> dagrun:<DagRun demp_scrape_amazon_dag_demo @ 2025-04-07 14:58:49.446233+00:00: manual__2025-04-07T14:58:49.446233+00:00, state:running, queued_at: 2025-04-07 14:58:49.464677+00:00. externally triggered: True>
+[2025-04-07T14:58:52.563+0000] {logging_mixin.py:190} INFO - Failure caused by Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-04-07T14:58:52.564+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=demp_scrape_amazon_dag_demo, task_id=scrape_task, run_id=manual__2025-04-07T14:58:49.446233+00:00, execution_date=20250407T145849, start_date=20250407T145852, end_date=20250407T145852
+[2025-04-07T14:58:52.591+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-07T14:58:52.592+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 58 for task scrape_task (Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+; 139)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/another_test.py", line 286, in main
+    list(executor.map(scrape_department, department_info_list))
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/another_test.py", line 266, in scrape_department
+    scraper = AmazonScraper()
+              ^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/another_test.py", line 40, in __init__
+    self.setup_driver()
+  File "/opt/airflow/dags/another_test.py", line 58, in setup_driver
+    self.driver = webdriver.Chrome(
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 50, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/selenium/webdriver/common/driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+[2025-04-07T14:58:52.622+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-07T14:58:52.661+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T14:58:52.671+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

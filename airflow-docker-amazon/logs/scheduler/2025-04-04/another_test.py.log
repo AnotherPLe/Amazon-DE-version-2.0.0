@@ -1,0 +1,376 @@
+[2025-04-04T22:18:41.310+0000] {processor.py:186} INFO - Started process (PID=23055) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:18:41.311+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:18:41.313+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:18:41.312+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:18:41.694+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:18:41.686+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/another_test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/another_test.py", line 305, in <module>
+    start_date=datetime(2025, 4, 4),
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2025-04-04T22:18:41.745+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:18:41.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.510 seconds
+[2025-04-04T22:19:12.575+0000] {processor.py:186} INFO - Started process (PID=23123) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:19:12.576+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:19:12.578+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:19:12.578+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:19:12.845+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:19:12.839+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/another_test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/another_test.py", line 305, in <module>
+    start_date=datetime(2025, 4, 4),
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2025-04-04T22:19:12.847+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:19:12.878+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.313 seconds
+[2025-04-04T22:19:43.757+0000] {processor.py:186} INFO - Started process (PID=23190) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:19:43.758+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:19:43.761+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:19:43.760+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:19:44.001+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:19:43.992+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/another_test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/another_test.py", line 305, in <module>
+    start_date=datetime(2025, 4, 4),
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2025-04-04T22:19:44.003+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:19:44.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.289 seconds
+[2025-04-04T22:20:14.108+0000] {processor.py:186} INFO - Started process (PID=23257) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:14.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:20:14.110+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:14.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:14.367+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:14.360+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/another_test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/another_test.py", line 305, in <module>
+    start_date=datetime(2025, 4, 4),
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2025-04-04T22:20:14.370+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:14.401+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.303 seconds
+[2025-04-04T22:20:30.495+0000] {processor.py:186} INFO - Started process (PID=23290) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:30.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:20:30.499+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:30.498+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:30.939+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:31.124+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.123+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.146+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.146+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.159+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.159+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.181+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.180+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.198+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.198+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.213+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.212+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.226+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.225+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.227+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.227+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:20:31.250+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.249+0000] {dag.py:3262} INFO - Creating ORM DAG for demp_scrape_amazon_dag_demo
+[2025-04-04T22:20:31.251+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:31.251+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:20:31.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.804 seconds
+[2025-04-04T22:20:50.871+0000] {processor.py:186} INFO - Started process (PID=23345) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:50.873+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:20:50.874+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:50.874+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:51.154+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:51.176+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:51.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:20:51.195+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:51.195+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:20:51.245+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.385 seconds
+[2025-04-04T22:20:51.836+0000] {processor.py:186} INFO - Started process (PID=23347) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:51.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:20:51.840+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:51.839+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:52.187+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:20:52.207+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:52.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:20:52.229+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:20:52.228+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:20:52.316+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.488 seconds
+[2025-04-04T22:21:22.572+0000] {processor.py:186} INFO - Started process (PID=23413) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:21:22.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:21:22.577+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:21:22.576+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:21:22.870+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:21:22.893+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:21:22.892+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:21:22.909+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:21:22.909+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:21:22.944+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.379 seconds
+[2025-04-04T22:21:53.357+0000] {processor.py:186} INFO - Started process (PID=23480) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:21:53.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:21:53.362+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:21:53.361+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:21:53.615+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:21:53.637+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:21:53.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:21:53.653+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:21:53.653+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:21:53.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.340 seconds
+[2025-04-04T22:22:17.436+0000] {processor.py:186} INFO - Started process (PID=23535) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:17.438+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:22:17.441+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:17.440+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:17.700+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:17.726+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:17.725+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:22:17.747+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:17.747+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:22:17.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.364 seconds
+[2025-04-04T22:22:21.644+0000] {processor.py:186} INFO - Started process (PID=23547) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:21.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:22:21.646+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:21.646+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:21.879+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:21.902+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:21.901+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:22:21.920+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:21.920+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:22:21.958+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.322 seconds
+[2025-04-04T22:22:27.303+0000] {processor.py:186} INFO - Started process (PID=23554) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:27.305+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:22:27.307+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:27.307+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:27.547+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:27.570+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:27.569+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:22:27.586+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:27.586+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:22:27.623+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.330 seconds
+[2025-04-04T22:22:58.179+0000] {processor.py:186} INFO - Started process (PID=23618) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:58.180+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:22:58.181+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:58.181+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:58.461+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:22:58.483+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:58.483+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:22:58.504+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:22:58.504+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:22:58.541+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.372 seconds
+[2025-04-04T22:23:12.452+0000] {processor.py:186} INFO - Started process (PID=23655) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:12.453+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:23:12.455+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:12.455+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:12.727+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:12.750+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:12.749+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:23:12.777+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:12.777+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:23:12.814+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.371 seconds
+[2025-04-04T22:23:15.140+0000] {processor.py:186} INFO - Started process (PID=23663) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:15.141+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:23:15.143+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:15.143+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:15.442+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:15.460+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:15.459+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:23:15.475+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:15.475+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:23:15.506+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.374 seconds
+[2025-04-04T22:23:16.334+0000] {processor.py:186} INFO - Started process (PID=23672) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:16.335+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:23:16.337+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:16.337+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:16.595+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:16.621+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:16.620+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:23:16.675+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:16.675+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:23:16.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.403 seconds
+[2025-04-04T22:23:46.909+0000] {processor.py:186} INFO - Started process (PID=23739) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:46.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:23:46.911+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:46.911+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:47.137+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:23:47.158+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:47.158+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:23:47.176+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:23:47.176+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:23:47.200+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.299 seconds
+[2025-04-04T22:24:17.275+0000] {processor.py:186} INFO - Started process (PID=23806) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:24:17.277+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:24:17.279+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:24:17.278+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:24:17.521+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:24:17.546+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:24:17.545+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:24:17.566+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:24:17.565+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:24:17.602+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.335 seconds
+[2025-04-04T22:24:47.851+0000] {processor.py:186} INFO - Started process (PID=23873) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:24:47.852+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:24:47.854+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:24:47.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:24:48.100+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:24:48.124+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:24:48.123+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:24:48.143+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:24:48.143+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:24:48.180+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.339 seconds
+[2025-04-04T22:25:19.045+0000] {processor.py:186} INFO - Started process (PID=23941) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:25:19.046+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:25:19.048+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:25:19.047+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:25:19.355+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:25:19.380+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:25:19.380+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:25:19.401+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:25:19.401+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:25:19.432+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.395 seconds
+[2025-04-04T22:25:49.526+0000] {processor.py:186} INFO - Started process (PID=24008) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:25:49.527+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:25:49.528+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:25:49.528+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:25:49.762+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:25:49.784+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:25:49.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:25:49.800+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:25:49.800+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:25:49.832+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.313 seconds
+[2025-04-04T22:26:20.589+0000] {processor.py:186} INFO - Started process (PID=24074) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:26:20.590+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:26:20.592+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:26:20.591+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:26:20.809+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:26:20.830+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:26:20.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:26:20.846+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:26:20.846+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:26:20.878+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.296 seconds
+[2025-04-04T22:26:51.790+0000] {processor.py:186} INFO - Started process (PID=24141) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:26:51.791+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:26:51.793+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:26:51.793+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:26:52.055+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:26:52.078+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:26:52.077+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:26:52.096+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:26:52.095+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:26:52.126+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.345 seconds
+[2025-04-04T22:27:14.015+0000] {processor.py:186} INFO - Started process (PID=24174) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:27:14.016+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:27:14.019+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:27:14.018+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:27:14.261+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:27:14.281+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:27:14.281+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:27:14.301+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:27:14.301+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:27:14.336+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.330 seconds
+[2025-04-04T22:27:44.616+0000] {processor.py:186} INFO - Started process (PID=24241) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:27:44.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:27:44.619+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:27:44.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:27:44.862+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:27:44.882+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:27:44.882+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:27:44.905+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:27:44.905+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:27:44.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.326 seconds
+[2025-04-04T22:28:15.501+0000] {processor.py:186} INFO - Started process (PID=24308) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:28:15.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:28:15.504+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:28:15.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:28:15.754+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:28:15.777+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:28:15.777+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:28:15.796+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:28:15.796+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:28:16.020+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.529 seconds
+[2025-04-04T22:28:46.120+0000] {processor.py:186} INFO - Started process (PID=24374) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:28:46.122+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:28:46.124+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:28:46.123+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:28:46.372+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:28:46.398+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:28:46.398+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:28:46.417+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:28:46.417+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:28:46.458+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.347 seconds
+[2025-04-04T22:29:16.957+0000] {processor.py:186} INFO - Started process (PID=24446) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:29:16.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:29:16.960+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:29:16.960+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:29:17.197+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:29:17.218+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:29:17.218+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:29:17.240+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:29:17.240+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:29:17.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.323 seconds
+[2025-04-04T22:29:47.894+0000] {processor.py:186} INFO - Started process (PID=24513) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:29:47.895+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:29:47.896+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:29:47.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:29:48.138+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:29:48.160+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:29:48.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:29:48.186+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:29:48.185+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:29:48.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.341 seconds
+[2025-04-04T22:30:18.407+0000] {processor.py:186} INFO - Started process (PID=24582) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:18.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:30:18.410+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:18.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:18.640+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:18.663+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:18.662+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:30:18.679+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:18.679+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:30:18.710+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.310 seconds
+[2025-04-04T22:30:48.925+0000] {processor.py:186} INFO - Started process (PID=24647) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:48.926+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:30:48.929+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:48.927+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:49.201+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:49.223+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:49.222+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:30:49.240+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:49.239+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:30:49.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.353 seconds
+[2025-04-04T22:30:57.674+0000] {processor.py:186} INFO - Started process (PID=24679) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:57.676+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:30:57.677+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:57.677+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:57.923+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:30:57.947+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:57.947+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:30:57.967+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:30:57.967+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:30:58.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.341 seconds
+[2025-04-04T22:31:28.794+0000] {processor.py:186} INFO - Started process (PID=24746) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:31:28.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:31:28.797+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:31:28.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:31:29.038+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:31:29.064+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:31:29.063+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:31:29.311+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:31:29.310+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:31:29.338+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.554 seconds
+[2025-04-04T22:32:00.434+0000] {processor.py:186} INFO - Started process (PID=24810) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:32:00.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:32:00.437+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:32:00.437+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:32:00.715+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:32:00.736+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:32:00.735+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:32:00.752+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:32:00.752+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:32:00.795+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.370 seconds
+[2025-04-04T22:32:31.171+0000] {processor.py:186} INFO - Started process (PID=24873) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:32:31.172+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:32:31.174+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:32:31.173+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:32:31.652+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:32:31.672+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:32:31.672+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:32:31.689+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:32:31.689+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:32:31.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.572 seconds
+[2025-04-04T22:33:02.886+0000] {processor.py:186} INFO - Started process (PID=24942) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:02.887+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:33:02.889+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:02.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:03.428+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:03.449+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:03.448+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:33:03.466+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:03.466+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:33:03.495+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.619 seconds
+[2025-04-04T22:33:34.001+0000] {processor.py:186} INFO - Started process (PID=25009) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:34.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:33:34.004+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:34.004+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:34.409+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:34.430+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:34.430+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:33:34.446+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:34.446+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:33:34.477+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.482 seconds
+[2025-04-04T22:33:48.615+0000] {processor.py:186} INFO - Started process (PID=25041) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:48.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:33:48.620+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:48.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:48.900+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:33:48.923+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:48.922+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:33:48.940+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:33:48.939+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:33:48.976+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.377 seconds
+[2025-04-04T22:34:20.583+0000] {processor.py:186} INFO - Started process (PID=25109) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:34:20.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:34:20.586+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:34:20.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:34:21.049+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:34:21.075+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:34:21.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:34:21.102+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:34:21.101+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:34:21.145+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.572 seconds
+[2025-04-04T22:34:53.117+0000] {processor.py:186} INFO - Started process (PID=25177) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:34:53.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:34:53.120+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:34:53.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:34:53.623+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:34:53.640+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:34:53.639+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:34:53.654+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:34:53.654+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:34:53.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.570 seconds
+[2025-04-04T22:35:24.079+0000] {processor.py:186} INFO - Started process (PID=25244) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:35:24.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:35:24.082+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:35:24.082+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:35:24.667+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:35:24.694+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:35:24.693+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:35:24.712+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:35:24.711+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:35:24.954+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.886 seconds
+[2025-04-04T22:35:55.035+0000] {processor.py:186} INFO - Started process (PID=25312) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:35:55.037+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:35:55.039+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:35:55.038+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:35:55.533+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:35:55.550+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:35:55.549+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:35:55.564+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:35:55.563+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:35:55.595+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.571 seconds
+[2025-04-04T22:36:25.660+0000] {processor.py:186} INFO - Started process (PID=25380) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:36:25.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:36:25.664+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:36:25.663+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:36:26.043+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:36:26.063+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:36:26.062+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:36:26.077+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:36:26.077+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:36:26.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.451 seconds
+[2025-04-04T22:36:56.425+0000] {processor.py:186} INFO - Started process (PID=25446) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:36:56.426+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:36:56.428+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:36:56.428+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:36:56.911+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:36:56.928+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:36:56.928+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:36:56.942+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:36:56.942+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:36:56.970+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.558 seconds
+[2025-04-04T22:37:27.246+0000] {processor.py:186} INFO - Started process (PID=25514) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:37:27.247+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:37:27.249+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:37:27.248+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:37:27.692+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:37:27.711+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:37:27.711+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:37:27.725+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:37:27.725+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:37:27.754+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.515 seconds
+[2025-04-04T22:37:58.426+0000] {processor.py:186} INFO - Started process (PID=25581) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:37:58.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:37:58.429+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:37:58.429+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:37:58.659+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:37:58.682+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:37:58.681+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:37:58.701+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:37:58.701+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:37:58.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.313 seconds
+[2025-04-04T22:38:28.847+0000] {processor.py:186} INFO - Started process (PID=25649) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:38:28.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:38:28.850+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:38:28.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:38:29.109+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:38:29.137+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:38:29.136+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:38:29.156+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:38:29.155+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:38:29.182+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.344 seconds
+[2025-04-04T22:38:59.272+0000] {processor.py:186} INFO - Started process (PID=25717) to work on /opt/airflow/dags/another_test.py
+[2025-04-04T22:38:59.273+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/another_test.py for tasks to queue
+[2025-04-04T22:38:59.275+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:38:59.275+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/another_test.py
+[2025-04-04T22:38:59.502+0000] {processor.py:925} INFO - DAG(s) 'demp_scrape_amazon_dag_demo' retrieved from /opt/airflow/dags/another_test.py
+[2025-04-04T22:38:59.525+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:38:59.524+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-04T22:38:59.541+0000] {logging_mixin.py:190} INFO - [2025-04-04T22:38:59.541+0000] {dag.py:4180} INFO - Setting next_dagrun for demp_scrape_amazon_dag_demo to None, run_after=None
+[2025-04-04T22:38:59.568+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/another_test.py took 0.303 seconds

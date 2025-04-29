@@ -1,0 +1,174 @@
+[2025-04-04T22:08:21.815+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-04T22:08:21.868+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Automotive_Enthusiast_Merchandise_13 manual__2025-04-04T22:06:59.454233+00:00 [queued]>
+[2025-04-04T22:08:21.893+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Automotive_Enthusiast_Merchandise_13 manual__2025-04-04T22:06:59.454233+00:00 [queued]>
+[2025-04-04T22:08:21.896+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-04-04T22:08:22.086+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): process_Automotive_Enthusiast_Merchandise_13> on 2025-04-04 22:06:59.454233+00:00
+[2025-04-04T22:08:22.166+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2204) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-04T22:08:22.172+0000] {standard_task_runner.py:72} INFO - Started process 2511 to run task
+[2025-04-04T22:08:22.216+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_Automotive_Enthusiast_Merchandise_13', 'manual__2025-04-04T22:06:59.454233+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmpns787ut7']
+[2025-04-04T22:08:22.234+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask process_Automotive_Enthusiast_Merchandise_13
+[2025-04-04T22:08:24.124+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_Automotive_Enthusiast_Merchandise_13 manual__2025-04-04T22:06:59.454233+00:00 [running]> on host ba893f484bac
+[2025-04-04T22:08:24.572+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_Automotive_Enthusiast_Merchandise_13' AIRFLOW_CTX_EXECUTION_DATE='2025-04-04T22:06:59.454233+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-04T22:06:59.454233+00:00'
+[2025-04-04T22:08:24.575+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-04T22:08:24.576+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-04T22:08:24.579+0000] {logging_mixin.py:190} INFO - Current task name:process_Automotive_Enthusiast_Merchandise_13 state:running start_date:2025-04-04 22:08:21.872102+00:00
+[2025-04-04T22:08:24.580+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-04T22:08:24.583+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-04T22:08:24.584+0000] {test_crawl_list_product.py:227} INFO - Processing: Automotive/Automotive Enthusiast Merchandise - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2204830011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_automotive_enthusiast_merchandise_0_2_10_15
+[2025-04-04T22:08:24.664+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-04T22:08:24.712+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:08:24.921+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-04-04T22:08:25.033+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-04-04T22:08:25.929+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-04T22:08:26.133+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/test_crawl_list_product.py", line 228, in scrape_department
+    scraper = AmazonScraper()
+              ^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/test_crawl_list_product.py", line 41, in __init__
+    self.setup_driver()
+  File "/opt/airflow/dags/test_crawl_list_product.py", line 56, in setup_driver
+    service = ChromeService(ChromeDriverManager().install())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/manager.py", line 41, in _get_driver_binary_path
+    binary_path = self._cache_manager.save_file_to_cache(driver, file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/driver_cache.py", line 54, in save_file_to_cache
+    files = self.unpack_archive(archive, path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/driver_cache.py", line 49, in unpack_archive
+    return self._file_manager.unpack_archive(archive, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/file_manager.py", line 57, in unpack_archive
+    return self.__extract_zip(archive_file, target_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/file_manager.py", line 63, in __extract_zip
+    archive = zip_class(archive_file.file_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1349, in __init__
+    self._RealGetContents()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1416, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-04-04T22:08:26.161+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-04T22:08:26.162+0000] {logging_mixin.py:190} INFO - Task start:2025-04-04 22:08:21.872102+00:00 end:2025-04-04 22:08:26.160601+00:00 duration:4.288499
+[2025-04-04T22:08:26.163+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_Automotive_Enthusiast_Merchandise_13> dag:<DAG: scrape_amazon_dag> dagrun:<DagRun scrape_amazon_dag @ 2025-04-04 22:06:59.454233+00:00: manual__2025-04-04T22:06:59.454233+00:00, state:running, queued_at: 2025-04-04 22:06:59.580718+00:00. externally triggered: True>
+[2025-04-04T22:08:26.164+0000] {logging_mixin.py:190} INFO - Failure caused by File is not a zip file
+[2025-04-04T22:08:26.165+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=scrape_amazon_dag, task_id=process_Automotive_Enthusiast_Merchandise_13, run_id=manual__2025-04-04T22:06:59.454233+00:00, execution_date=20250404T220659, start_date=20250404T220821, end_date=20250404T220826
+[2025-04-04T22:08:27.105+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-04T22:08:27.106+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 19 for task process_Automotive_Enthusiast_Merchandise_13 (File is not a zip file; 2511)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/test_crawl_list_product.py", line 228, in scrape_department
+    scraper = AmazonScraper()
+              ^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/test_crawl_list_product.py", line 41, in __init__
+    self.setup_driver()
+  File "/opt/airflow/dags/test_crawl_list_product.py", line 56, in setup_driver
+    service = ChromeService(ChromeDriverManager().install())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/manager.py", line 41, in _get_driver_binary_path
+    binary_path = self._cache_manager.save_file_to_cache(driver, file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/driver_cache.py", line 54, in save_file_to_cache
+    files = self.unpack_archive(archive, path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/driver_cache.py", line 49, in unpack_archive
+    return self._file_manager.unpack_archive(archive, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/file_manager.py", line 57, in unpack_archive
+    return self.__extract_zip(archive_file, target_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/webdriver_manager/core/file_manager.py", line 63, in __extract_zip
+    archive = zip_class(archive_file.file_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1349, in __init__
+    self._RealGetContents()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1416, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-04-04T22:08:27.171+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-04T22:08:27.230+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-04T22:08:27.231+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-04-04T22:08:27.310+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

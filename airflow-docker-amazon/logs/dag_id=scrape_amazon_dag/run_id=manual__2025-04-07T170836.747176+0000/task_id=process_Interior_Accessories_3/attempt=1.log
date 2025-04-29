@@ -1,0 +1,37 @@
+[2025-04-07T17:08:57.821+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-07T17:08:57.854+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Interior_Accessories_3 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:08:57.871+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_Interior_Accessories_3 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:08:57.872+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-07T17:08:58.056+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_Interior_Accessories_3> on 2025-04-07 17:08:36.747176+00:00
+[2025-04-07T17:08:58.087+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_Interior_Accessories_3', 'manual__2025-04-07T17:08:36.747176+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmpmrq7amjb']
+[2025-04-07T17:08:58.081+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5052) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T17:08:58.090+0000] {standard_task_runner.py:105} INFO - Job 92: Subtask process_Interior_Accessories_3
+[2025-04-07T17:08:58.092+0000] {standard_task_runner.py:72} INFO - Started process 5511 to run task
+[2025-04-07T17:08:58.996+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_Interior_Accessories_3 manual__2025-04-07T17:08:36.747176+00:00 [running]> on host 13b4251b7529
+[2025-04-07T17:08:59.493+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_Interior_Accessories_3' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T17:08:36.747176+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T17:08:36.747176+00:00'
+[2025-04-07T17:08:59.497+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-07T17:08:59.498+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-07T17:08:59.499+0000] {logging_mixin.py:190} INFO - Current task name:process_Interior_Accessories_3 state:running start_date:2025-04-07 17:08:57.855432+00:00
+[2025-04-07T17:08:59.503+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-07T17:08:59.506+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-07T17:08:59.508+0000] {test_crawl_list_product.py:227} INFO - Processing: Automotive/Interior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5
+[2025-04-07T17:08:59.619+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-07T17:08:59.787+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:08:59.987+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:00.170+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-07T17:09:08.455+0000] {test_crawl_list_product.py:71} WARNING - Could not detect layout, using default (tiles)
+[2025-04-07T17:09:08.501+0000] {test_crawl_list_product.py:191} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/pt1_20250407/part1_data_Automotive_Interior Accessories_20250407.csv
+[2025-04-07T17:09:08.502+0000] {test_crawl_list_product.py:208} INFO - Page 1 for Automotive/Interior Accessories : Crawled 0 items in 7.05 seconds
+[2025-04-07T17:09:08.527+0000] {test_crawl_list_product.py:212} INFO - Reached the last page (Page 1) for Automotive/Interior Accessories
+[2025-04-07T17:09:09.554+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-07T17:09:09.582+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-07T17:09:09.583+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_amazon_dag, task_id=process_Interior_Accessories_3, run_id=manual__2025-04-07T17:08:36.747176+00:00, execution_date=20250407T170836, start_date=20250407T170857, end_date=20250407T170909
+[2025-04-07T17:09:10.052+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-07T17:09:10.064+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-07T17:09:10.064+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag queued_at:2025-04-07 17:08:36.770900+00:00
+[2025-04-07T17:09:10.065+0000] {logging_mixin.py:190} INFO - Task hostname:13b4251b7529 operator:PythonOperator
+[2025-04-07T17:09:10.108+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-07T17:09:10.152+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T17:09:10.169+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,57 @@
+[2025-04-07T17:09:23.355+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-07T17:09:23.394+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_RV_Parts___Accessories_10 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:09:23.413+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_amazon_dag.process_RV_Parts___Accessories_10 manual__2025-04-07T17:08:36.747176+00:00 [queued]>
+[2025-04-07T17:09:23.415+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-07T17:09:23.484+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_RV_Parts___Accessories_10> on 2025-04-07 17:08:36.747176+00:00
+[2025-04-07T17:09:23.497+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5057) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-07T17:09:23.501+0000] {standard_task_runner.py:72} INFO - Started process 6535 to run task
+[2025-04-07T17:09:23.541+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scrape_amazon_dag', 'process_RV_Parts___Accessories_10', 'manual__2025-04-07T17:08:36.747176+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/test_crawl_list_product.py', '--cfg-path', '/tmp/tmpd57ekhfx']
+[2025-04-07T17:09:23.549+0000] {standard_task_runner.py:105} INFO - Job 101: Subtask process_RV_Parts___Accessories_10
+[2025-04-07T17:09:23.800+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_amazon_dag.process_RV_Parts___Accessories_10 manual__2025-04-07T17:08:36.747176+00:00 [running]> on host 13b4251b7529
+[2025-04-07T17:09:24.115+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scrape_amazon_dag' AIRFLOW_CTX_TASK_ID='process_RV_Parts___Accessories_10' AIRFLOW_CTX_EXECUTION_DATE='2025-04-07T17:08:36.747176+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-07T17:08:36.747176+00:00'
+[2025-04-07T17:09:24.124+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-07T17:09:24.126+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-07T17:09:24.127+0000] {logging_mixin.py:190} INFO - Current task name:process_RV_Parts___Accessories_10 state:running start_date:2025-04-07 17:09:23.395708+00:00
+[2025-04-07T17:09:24.128+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag and current dag run status:running
+[2025-04-07T17:09:24.129+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-07T17:09:24.131+0000] {test_crawl_list_product.py:227} INFO - Processing: Automotive/RV Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2258019011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_rv_parts_accessories_0_2_10_12
+[2025-04-07T17:09:24.327+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-07T17:09:24.843+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:25.109+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-07T17:09:25.383+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-07T17:09:39.642+0000] {test_crawl_list_product.py:220} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2258019011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_rv_parts_accessories_0_2_10_12: Message: 
+Stacktrace:
+#0 0x55cd8a1d9e6a <unknown>
+#1 0x55cd89c8b640 <unknown>
+#2 0x55cd89cdcb5a <unknown>
+#3 0x55cd89cdcd51 <unknown>
+#4 0x55cd89d2b344 <unknown>
+#5 0x55cd89d0277d <unknown>
+#6 0x55cd89d287b5 <unknown>
+#7 0x55cd89d02523 <unknown>
+#8 0x55cd89cceef3 <unknown>
+#9 0x55cd89ccfb51 <unknown>
+#10 0x55cd8a19ed2b <unknown>
+#11 0x55cd8a1a2c01 <unknown>
+#12 0x55cd8a186512 <unknown>
+#13 0x55cd8a1a3774 <unknown>
+#14 0x55cd8a16a90f <unknown>
+#15 0x55cd8a1c7fb8 <unknown>
+#16 0x55cd8a1c8196 <unknown>
+#17 0x55cd8a1d8cb6 <unknown>
+#18 0x7faae751a1c4 <unknown>
+
+[2025-04-07T17:09:40.555+0000] {test_crawl_list_product.py:191} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/pt1_20250407/part1_data_Automotive_RV Parts & Accessories_20250407.csv
+[2025-04-07T17:09:41.391+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-07T17:09:41.683+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-07T17:09:41.687+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_amazon_dag, task_id=process_RV_Parts___Accessories_10, run_id=manual__2025-04-07T17:08:36.747176+00:00, execution_date=20250407T170836, start_date=20250407T170923, end_date=20250407T170941
+[2025-04-07T17:09:41.928+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-07T17:09:41.930+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-07T17:09:41.937+0000] {logging_mixin.py:190} INFO - Dag name:scrape_amazon_dag queued_at:2025-04-07 17:08:36.770900+00:00
+[2025-04-07T17:09:41.941+0000] {logging_mixin.py:190} INFO - Task hostname:13b4251b7529 operator:PythonOperator
+[2025-04-07T17:09:42.053+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-07T17:09:42.428+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-07T17:09:42.720+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-07T17:09:43.530+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

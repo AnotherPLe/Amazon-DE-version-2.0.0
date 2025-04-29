@@ -1,0 +1,258 @@
+[2025-04-08T03:26:24.537+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-08T03:26:24.568+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: amazon_scraping_dag.scrape_amazon_task manual__2025-04-08T03:26:19.395886+00:00 [queued]>
+[2025-04-08T03:26:24.583+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: amazon_scraping_dag.scrape_amazon_task manual__2025-04-08T03:26:19.395886+00:00 [queued]>
+[2025-04-08T03:26:24.584+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-08T03:26:24.615+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_amazon_task> on 2025-04-08 03:26:19.395886+00:00
+[2025-04-08T03:26:24.625+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2874) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-08T03:26:24.630+0000] {standard_task_runner.py:72} INFO - Started process 2877 to run task
+[2025-04-08T03:26:24.629+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'amazon_scraping_dag', 'scrape_amazon_task', 'manual__2025-04-08T03:26:19.395886+00:00', '--job-id', '123', '--raw', '--subdir', 'DAGS_FOLDER/another_another_test.py', '--cfg-path', '/tmp/tmpdw507118']
+[2025-04-08T03:26:24.631+0000] {standard_task_runner.py:105} INFO - Job 123: Subtask scrape_amazon_task
+[2025-04-08T03:26:24.706+0000] {task_command.py:467} INFO - Running <TaskInstance: amazon_scraping_dag.scrape_amazon_task manual__2025-04-08T03:26:19.395886+00:00 [running]> on host 13b4251b7529
+[2025-04-08T03:26:25.537+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='amazon_scraping_dag' AIRFLOW_CTX_TASK_ID='scrape_amazon_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T03:26:19.395886+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T03:26:19.395886+00:00'
+[2025-04-08T03:26:25.540+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-08T03:26:25.540+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-08T03:26:25.541+0000] {logging_mixin.py:190} INFO - Current task name:scrape_amazon_task state:running start_date:2025-04-08 03:26:24.569160+00:00
+[2025-04-08T03:26:25.542+0000] {logging_mixin.py:190} INFO - Dag name:amazon_scraping_dag and current dag run status:running
+[2025-04-08T03:26:25.543+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-08T03:26:25.558+0000] {another_another_test.py:286} INFO - Processing 1/15: Automotive/Car Care - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718271&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_care_0_2_10_2
+[2025-04-08T03:26:25.622+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:26:25.897+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:26.089+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:26.262+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:26:33.125+0000] {another_another_test.py:262} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718271&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_care_0_2_10_2: Message: 
+Stacktrace:
+#0 0x55bf34f7be6a <unknown>
+#1 0x55bf34a2d640 <unknown>
+#2 0x55bf34a7eb5a <unknown>
+#3 0x55bf34a7ed51 <unknown>
+#4 0x55bf34acd344 <unknown>
+#5 0x55bf34aa477d <unknown>
+#6 0x55bf34aca7b5 <unknown>
+#7 0x55bf34aa4523 <unknown>
+#8 0x55bf34a70ef3 <unknown>
+#9 0x55bf34a71b51 <unknown>
+#10 0x55bf34f40d2b <unknown>
+#11 0x55bf34f44c01 <unknown>
+#12 0x55bf34f28512 <unknown>
+#13 0x55bf34f45774 <unknown>
+#14 0x55bf34f0c90f <unknown>
+#15 0x55bf34f69fb8 <unknown>
+#16 0x55bf34f6a196 <unknown>
+#17 0x55bf34f7acb6 <unknown>
+#18 0x7fdb9673b1c4 <unknown>
+
+[2025-04-08T03:26:33.216+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Car Care_20250408.csv
+[2025-04-08T03:26:33.381+0000] {another_another_test.py:286} INFO - Processing 2/15: Automotive/Car Electronics & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2230642011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_electronics_accessories_0_2_10_3
+[2025-04-08T03:26:33.462+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:26:33.601+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:33.795+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:33.992+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:26:40.566+0000] {another_another_test.py:262} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2230642011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_car_electronics_accessories_0_2_10_3: Message: 
+Stacktrace:
+#0 0x562409f83e6a <unknown>
+#1 0x562409a35640 <unknown>
+#2 0x562409a86b5a <unknown>
+#3 0x562409a86d51 <unknown>
+#4 0x562409ad5344 <unknown>
+#5 0x562409aac77d <unknown>
+#6 0x562409ad27b5 <unknown>
+#7 0x562409aac523 <unknown>
+#8 0x562409a78ef3 <unknown>
+#9 0x562409a79b51 <unknown>
+#10 0x562409f48d2b <unknown>
+#11 0x562409f4cc01 <unknown>
+#12 0x562409f30512 <unknown>
+#13 0x562409f4d774 <unknown>
+#14 0x562409f1490f <unknown>
+#15 0x562409f71fb8 <unknown>
+#16 0x562409f72196 <unknown>
+#17 0x562409f82cb6 <unknown>
+#18 0x7f4bdf2dc1c4 <unknown>
+
+[2025-04-08T03:26:40.727+0000] {another_another_test.py:229} INFO - Saved/Updated 2232 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Car Electronics & Accessories_20250408.csv
+[2025-04-08T03:26:40.794+0000] {another_another_test.py:286} INFO - Processing 3/15: Automotive/Exterior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857511&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_exterior_accessories__0_2_10_4
+[2025-04-08T03:26:40.850+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:26:40.954+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:41.151+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:41.325+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:26:46.661+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:26:46.690+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Exterior Accessories_20250408.csv
+[2025-04-08T03:26:46.691+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Exterior Accessories : Crawled 0 items in 4.85 seconds
+[2025-04-08T03:26:46.709+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Exterior Accessories
+[2025-04-08T03:26:46.775+0000] {another_another_test.py:286} INFO - Processing 4/15: Automotive/Interior Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5
+[2025-04-08T03:26:46.856+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:26:46.998+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:47.163+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:47.340+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:26:53.678+0000] {another_another_test.py:262} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15857501&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_interior_accessories_0_2_10_5: Message: 
+Stacktrace:
+#0 0x55b59db93e6a <unknown>
+#1 0x55b59d645640 <unknown>
+#2 0x55b59d696b5a <unknown>
+#3 0x55b59d696d51 <unknown>
+#4 0x55b59d6e5344 <unknown>
+#5 0x55b59d6bc77d <unknown>
+#6 0x55b59d6e27b5 <unknown>
+#7 0x55b59d6bc523 <unknown>
+#8 0x55b59d688ef3 <unknown>
+#9 0x55b59d689b51 <unknown>
+#10 0x55b59db58d2b <unknown>
+#11 0x55b59db5cc01 <unknown>
+#12 0x55b59db40512 <unknown>
+#13 0x55b59db5d774 <unknown>
+#14 0x55b59db2490f <unknown>
+#15 0x55b59db81fb8 <unknown>
+#16 0x55b59db82196 <unknown>
+#17 0x55b59db92cb6 <unknown>
+#18 0x7f0b507801c4 <unknown>
+
+[2025-04-08T03:26:53.798+0000] {another_another_test.py:229} INFO - Saved/Updated 1512 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Interior Accessories_20250408.csv
+[2025-04-08T03:26:53.864+0000] {another_another_test.py:286} INFO - Processing 5/15: Automotive/Lights & Lighting Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15736321&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_lights_lighting_accessories_0_2_10_6
+[2025-04-08T03:26:53.921+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:26:54.030+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:54.194+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:54.392+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:26:58.311+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:26:58.589+0000] {another_another_test.py:229} INFO - Saved/Updated 4560 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Lights & Lighting Accessories_20250408.csv
+[2025-04-08T03:26:58.591+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Lights & Lighting Accessories : Crawled 0 items in 3.67 seconds
+[2025-04-08T03:26:58.610+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Lights & Lighting Accessories
+[2025-04-08T03:26:58.973+0000] {another_another_test.py:286} INFO - Processing 6/15: Automotive/Motorcycle & Powersports - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A346333011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_motorcycle_powersports_0_2_10_7
+[2025-04-08T03:26:59.023+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:26:59.134+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:59.319+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:26:59.500+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:03.313+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:03.331+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Motorcycle & Powersports_20250408.csv
+[2025-04-08T03:27:03.332+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Motorcycle & Powersports : Crawled 0 items in 3.38 seconds
+[2025-04-08T03:27:03.347+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Motorcycle & Powersports
+[2025-04-08T03:27:03.799+0000] {another_another_test.py:286} INFO - Processing 7/15: Automotive/Oils & Fluids - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15718791&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_oils_fluid_0_2_10_8
+[2025-04-08T03:27:03.870+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:03.988+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:04.185+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:04.371+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:07.836+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:07.875+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Oils & Fluids_20250408.csv
+[2025-04-08T03:27:07.876+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Oils & Fluids : Crawled 0 items in 3.12 seconds
+[2025-04-08T03:27:07.893+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Oils & Fluids
+[2025-04-08T03:27:07.963+0000] {another_another_test.py:286} INFO - Processing 8/15: Automotive/Paint & Paint Supplies - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A13591416011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_paint_paint_supplies_0_2_10_9
+[2025-04-08T03:27:08.031+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:08.155+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:08.358+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:08.521+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:12.177+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:12.191+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Paint & Paint Supplies_20250408.csv
+[2025-04-08T03:27:12.192+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Paint & Paint Supplies : Crawled 0 items in 3.19 seconds
+[2025-04-08T03:27:12.205+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Paint & Paint Supplies
+[2025-04-08T03:27:12.272+0000] {another_another_test.py:286} INFO - Processing 9/15: Automotive/Performance Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15710351&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_performance_parts_accessories_0_2_10_10
+[2025-04-08T03:27:12.323+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:12.424+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:12.641+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:12.812+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:16.405+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:16.423+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Performance Parts & Accessories_20250408.csv
+[2025-04-08T03:27:16.424+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Performance Parts & Accessories : Crawled 0 items in 2.78 seconds
+[2025-04-08T03:27:16.440+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Performance Parts & Accessories
+[2025-04-08T03:27:16.555+0000] {another_another_test.py:286} INFO - Processing 10/15: Automotive/Replacement Parts - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15719731&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_replacement_parts_0_2_10_11
+[2025-04-08T03:27:16.909+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:17.000+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:17.178+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:17.383+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:21.263+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:21.281+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Replacement Parts_20250408.csv
+[2025-04-08T03:27:21.282+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Replacement Parts : Crawled 0 items in 3.38 seconds
+[2025-04-08T03:27:21.299+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Replacement Parts
+[2025-04-08T03:27:21.368+0000] {another_another_test.py:286} INFO - Processing 11/15: Automotive/RV Parts & Accessories - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2258019011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_rv_parts_accessories_0_2_10_12
+[2025-04-08T03:27:21.421+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:21.544+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:21.711+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:21.887+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:28.181+0000] {another_another_test.py:262} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2258019011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_rv_parts_accessories_0_2_10_12: Message: 
+Stacktrace:
+#0 0x55f25085ae6a <unknown>
+#1 0x55f25030c640 <unknown>
+#2 0x55f25035db5a <unknown>
+#3 0x55f25035dd51 <unknown>
+#4 0x55f2503ac344 <unknown>
+#5 0x55f25038377d <unknown>
+#6 0x55f2503a97b5 <unknown>
+#7 0x55f250383523 <unknown>
+#8 0x55f25034fef3 <unknown>
+#9 0x55f250350b51 <unknown>
+#10 0x55f25081fd2b <unknown>
+#11 0x55f250823c01 <unknown>
+#12 0x55f250807512 <unknown>
+#13 0x55f250824774 <unknown>
+#14 0x55f2507eb90f <unknown>
+#15 0x55f250848fb8 <unknown>
+#16 0x55f250849196 <unknown>
+#17 0x55f250859cb6 <unknown>
+#18 0x7f91c1ea31c4 <unknown>
+
+[2025-04-08T03:27:28.198+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_RV Parts & Accessories_20250408.csv
+[2025-04-08T03:27:28.516+0000] {another_another_test.py:286} INFO - Processing 12/15: Automotive/Tires & Wheels - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15706571&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_tires_wheels_0_2_10_13
+[2025-04-08T03:27:28.558+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:28.670+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:28.843+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:29.004+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:32.845+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:32.878+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Tires & Wheels_20250408.csv
+[2025-04-08T03:27:32.879+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Tires & Wheels : Crawled 0 items in 3.16 seconds
+[2025-04-08T03:27:32.898+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Tires & Wheels
+[2025-04-08T03:27:33.018+0000] {another_another_test.py:286} INFO - Processing 13/15: Automotive/Tools & Equipment - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15706941&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_tools_equipment_0_2_10_14
+[2025-04-08T03:27:33.080+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:33.207+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:33.398+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:33.585+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:37.162+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:37.182+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Tools & Equipment_20250408.csv
+[2025-04-08T03:27:37.182+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Tools & Equipment : Crawled 0 items in 3.15 seconds
+[2025-04-08T03:27:37.197+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Tools & Equipment
+[2025-04-08T03:27:37.263+0000] {another_another_test.py:286} INFO - Processing 14/15: Automotive/Automotive Enthusiast Merchandise - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A2204830011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_automotive_enthusiast_merchandise_0_2_10_15
+[2025-04-08T03:27:37.315+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:37.424+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:37.617+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:37.815+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:40.982+0000] {another_another_test.py:82} WARNING - Could not detect layout, using default (tiles)
+[2025-04-08T03:27:41.003+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Automotive Enthusiast Merchandise_20250408.csv
+[2025-04-08T03:27:41.004+0000] {another_another_test.py:249} INFO - Page 1 for Automotive/Automotive Enthusiast Merchandise : Crawled 0 items in 2.74 seconds
+[2025-04-08T03:27:41.022+0000] {another_another_test.py:254} INFO - Reached the last page (Page 1) for Automotive/Automotive Enthusiast Merchandise
+[2025-04-08T03:27:41.140+0000] {another_another_test.py:286} INFO - Processing 15/15: Automotive/Heavy Duty & Commercial Vehicle Equipment - https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15682003011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_heavyduty_commercial_0_2_10_16
+[2025-04-08T03:27:41.188+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-04-08T03:27:41.286+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:41.435+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-04-08T03:27:41.599+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/135.0.7049.42/chromedriver-linux64/chromedriver] found in cache
+[2025-04-08T03:27:47.936+0000] {another_another_test.py:262} ERROR - Error during scraping https://www.amazon.com/s?bbn=2562090011&rh=i%3Aspecialty-aps%2Cn%3A2562090011%2Cn%3A%2115690151%2Cn%3A15682003011&s=date-desc-rank&ref_=nav_em__nav_desktop_sa_intl_heavyduty_commercial_0_2_10_16: Message: 
+Stacktrace:
+#0 0x5617946bfe6a <unknown>
+#1 0x561794171640 <unknown>
+#2 0x5617941c2b5a <unknown>
+#3 0x5617941c2d51 <unknown>
+#4 0x561794211344 <unknown>
+#5 0x5617941e877d <unknown>
+#6 0x56179420e7b5 <unknown>
+#7 0x5617941e8523 <unknown>
+#8 0x5617941b4ef3 <unknown>
+#9 0x5617941b5b51 <unknown>
+#10 0x561794684d2b <unknown>
+#11 0x561794688c01 <unknown>
+#12 0x56179466c512 <unknown>
+#13 0x561794689774 <unknown>
+#14 0x56179465090f <unknown>
+#15 0x5617946adfb8 <unknown>
+#16 0x5617946ae196 <unknown>
+#17 0x5617946becb6 <unknown>
+#18 0x7f5f93d591c4 <unknown>
+
+[2025-04-08T03:27:47.950+0000] {another_another_test.py:229} INFO - Saved/Updated 0 products to /opt/***/csv/src_output/part1_20250408/part1_data_Automotive_Heavy Duty & Commercial Vehicle Equipment_20250408.csv
+[2025-04-08T03:27:48.017+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-08T03:27:48.029+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-08T03:27:48.030+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=amazon_scraping_dag, task_id=scrape_amazon_task, run_id=manual__2025-04-08T03:26:19.395886+00:00, execution_date=20250408T032619, start_date=20250408T032624, end_date=20250408T032748
+[2025-04-08T03:27:48.067+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-08T03:27:48.068+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-08T03:27:48.069+0000] {logging_mixin.py:190} INFO - Dag name:amazon_scraping_dag queued_at:2025-04-08 03:26:19.429029+00:00
+[2025-04-08T03:27:48.069+0000] {logging_mixin.py:190} INFO - Task hostname:13b4251b7529 operator:PythonOperator
+[2025-04-08T03:27:48.113+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-08T03:27:48.132+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T03:27:48.143+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
