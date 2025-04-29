@@ -1,0 +1,2 @@
+# Amazon DE version 2.0.0
+  The "Amazon - DE - Version 2.0.0" project is an advanced iteration of a data engineering solution aimed at extracting, processing, and analyzing e-commerce data from Amazon. The system is designed to gather detailed product information from Amazon's Automotive catalog, process it through a series of data pipelines, and store it in a structured format for easy analysis and reporting.
